@@ -110,24 +110,23 @@ Les dix séances du cours parcoureront les enjeux liés aux données, à l'infor
 —> lecture à définir
 
 #### Séance 6. Data science : modélisation, machine learning et algorithmes
-—> Lecture obligatoire : Parasie&Dagiral (2016) , « [La science des données à la conquête des mondes sociaux. Ce que le Big Data doit aux épistémologies locales](http://books.openedition.org/cdf/4999?lang=fr)», in P.-M. Menger et S. Paye (dir.), /Big data et traçabilité numérique : les sciences sociales face à la quantification massive des individus/, Paris, Collège de France. 
+—> Lecture obligatoire : Parasie&Dagiral (2016) , « [La science des données à la conquête des mondes sociaux. Ce que le Big Data doit aux épistémologies locales](http://books.openedition.org/cdf/4999?lang=fr)», in P.-M. Menger et S. Paye (dir.), _Big data et traçabilité numérique : les sciences sociales face à la quantification massive des individus_, Paris, Collège de France. 
 
 ---
 ### Contenu du cours par session
 
-#### Savoirs
+.center[**Savoirs**]
 
 
-Séance 7. Science ouverte
+#### Séance 7. Science ouverte
 —> Lecture obligatoire :  Fecher B., Friesike S. (2014) Open Science: One Term, Five Schools of Thought. In: Bartling S., Friesike S. (eds) Opening Science. Springer, Cham. https://doi.org/10.1007/978-3-319-00026-8_2
 
-Séance 8. Journalisme de données
+#### Séance 8. Journalisme de données
 —> Lecture obligatoire :  Parasie (2019), « [Data Journalism and the Promise of Transparency](https://sypar.files.wordpress.com/2019/05/2019-parasie_data-journalism-and-the-promise-of-transparency.pdf) »,  /The Routledge Companion to Media and Scandal/, Routledge
 
-Séance 9. Etude de l’opinion à partir des données
-—> Lecture à définir
+#### Séance 9. Etude de l’opinion à partir des données
 
-Séance 10. Factualité et monde post-statistiques 
+#### Séance 10. Factualité et monde post-statistiques 
 —> Lecture obligatoire :  Davies (2017), « [Comment la statistique a perdu son pouvoir et pourquoi nous devrions craindre ce qui va suivre](http://revues-sfds.math.cnrs.fr/index.php/stat_soc/article/view/608/571) », /Statistiques et société. 
 
 ---
@@ -147,7 +146,7 @@ class:center, middle, inverse
 # 1 - Au fait, c'est quoi une donnée ?
 ---
 
-## Introduction 
+### Introduction 
 
 [Interview de Serge Abiteboul](https://www.youtube.com/watch?v=qqvsiTUJy7k), commissaire scientifique de l'exposition Terradata et directeur de recherche à l'Inria :
 
@@ -155,54 +154,211 @@ class:center, middle, inverse
 <iframe width="560" height="315" src="https://www.youtube.com/embed/qqvsiTUJy7k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ]
 
----
-Classe: middle
 
-## Une définition des données
+---
+### Le censeur à Rome, ancêtre de la statistique
+.center[.reduite3[![](https://datactivist.coop/opendatadays/1/img/asterix.png)]]
+
+.footnote[Source : *Asterix chez les pictes*, © Albert René 2013]
+---
+### Le censeur à Rome, ancêtre de la statistique
+.center[.reduite3[![](https://datactivist.coop/opendatadays/1/img/asterix1.png)]]
+
+.footnote[*Asterix chez les pictes*, © Albert René 2013]
+---
+### La statistique : outil de gouvernement et de preuve
+.pull-left[.middle[La statistique est à la fois :
+
+  + **outil de gouvernement** (_Statistik_ - 18e siècle), et
+  
+  
+  + **outil de preuve** (_statistics_ - 19e siècle)]]
+.pull-right[.reduite2[![center](https://datactivist.coop/opendatadays/1/img/desrosieres1.jpg)]]
+---
+  
+## [Quantifier, c'est convenir puis mesurer](http://www.pressesdesmines.com/media/extrait/PourSocioHistExtr.pdf)
 
 .pull-left[
-![](./img/kitchin.png)
-]
- 
-.pull-right[
- 
-> *Les données sont couramment comprises comme les matériaux bruts produits dans l’abstraction du monde en catégories, mesures et toute autre forme de représentation-nombres, caractères, symboles, images, sons, ondes électromagnétiques, bits qui constituent les fondations sur lesquelles l’information et le savoir sont créés.*
-]
+> Le verbe quantifier est employé ici dans un sens large : **exprimer et
+faire exister sous une forme numérique ce qui, auparavant, était exprimé par
+des mots et non par des nombres**.]
+.pull-right[.reduite2[![](https://datactivist.coop/opendatadays/1/img/desrosi.jpeg)]]
+
+---
+### [Quantifier, c'est convenir puis mesurer](http://www.pressesdesmines.com/media/extrait/PourSocioHistExtr.pdf)
+
+.center[.reduite3[![](https://datactivist.coop/opendatadays/1/img/asterix2.png)]]
+
+.footnote[*Asterix chez les pictes*, © Albert René 2013]
+
+---
+### Quantifier, c'est inscrire et figer une réalité sans cesse mouvante
+
+.center[.reduite3[![](https://datactivist.coop/opendatadays/1/img/asterix3.png)]]
+
+.footnote[*Asterix chez les pictes*, © Albert René 2013]
+
+---
+class:inverse, middle, center
+# Vers une définition des données
+
+---
+### Etymologie
+
+### Latin : _dare_ (donner) > _datum_ (donné) > _data_ (donnés)
+<br/><br/>
+Ce qui est évident, va de soi, est accepté sans discussion
+
+<br/><br/>
+
+> L'existence d'une donnée est indépendante de toute considération de la vérité ontologique correspondante. Lorsqu'un fait s'avère être faux, il cesse d'être un fait. 
+Les fausses données n'en restent pas moins des données.
+.footnote[[Rosenberg, 2013](https://mitpress.mit.edu/books/raw-data-oxymoron)]
 
 ---
 
-## Les données sont partout !
+### Vers une définition
 
-.center[<img src="./img/dataeverywhere.png" height="350"/>]
+.pull-left[.reduite3[
+![](https://datactivist.coop/opendatadays/1/img/kitchin.jpg)
 
-
-#### Identifiez 3 appareils qui collectent des données 
-
-.footnote[source : [The Economist](http://lazowska.cs.washington.edu/escience/Economist.big.data.pdf)]
-
----
-
-### La pyramide Data-Information-Knowledge-Wisdom
-
-Attribuée à [Russell Ackoff](http://en.wikipedia.org/wiki/Russell_L._Ackoff) en 1989, elle signfie que :
-.pull-left[
-![largeur](./img/dikw_pyramid.svg)
-]
-
+⏺ enregistrabilité +🏗 briques de base ("*buildings blocks*")]]
 .pull-right[
-
-- Les **.red[données]** sont la matière "brute" de l'information conçues plutôt pour des machines.
-- **.red[L'information]** pourrait être définie comme des données qui ont été interprétées pour dégager du sens pour des humains.
-- En donnant du sens à de l'information, on obtient de la **.red[connaissance]**
-- En donnant du sens à la connaissance on obtient de la **.red[sagesse]**.]
-
+> *Les données sont généralement comprises comme étant la matière première produite par la synthèse du monde en catégories, mesures et autres formes de représentation - nombres, caractères, symboles, images, sons, ondes électromagnétiques, bits - qui constituent les éléments de base à partir desquels l'information et le savoir sont créés. *]
 ---
 Class:
 ## La pyramide Data-Information-Knowledge-Wisdom
 
-.center[<img src="./img/competence.png" height="300"/>]
+.pull-left[
+[![largeur](https://datactivist.coop/opendatadays/1/img/DIKW_Pyramid.svg)](https://commons.wikimedia.org/w/index.php?curid=37705247)
+]
 
-_NB : le haut de la pyramide, est parfois remplacé par "compétence"_
+.pull-right[Attribuée à [Russell Ackoff](http://en.wikipedia.org/wiki/Russell_L._Ackoff), 1989
+
+Les données peuvent être des :
+
+- faits
+- signal/stimulis
+- symboles]
+
+---
+Class:
+### La pyramide Data-Information-Knowledge-Wisdom
+
+- Les **.red[données]** sont la matière "brute" d'où naît l'information.
+
+- **.red[L'information]** pourrait être définie comme des données qui ont été consignées,
+classées, organisées, raccordées ou interprétées dans un cadre qui en dégage le sens
+
+- En donnant du sens à de l'information, on obtient de la **.red[connaissance]**
+
+- En donnant du sens à la **.red[connaissance]** on obtient du savoir
+
+---
+### "Datafication" : la mise en données du monde
+> “L'immense gisement de données numériques découle de la capacité à paramétrer des aspects du monde et de la vie humaine qui n'avaient encore jamais été quantifiés. On peut qualifier ce processus de **« mise en données » (datafication)**. 
+> […] “La mise en données désigne autre chose que la numérisation, laquelle consiste à traduire un contenu analogique - texte, film, photographie - en une séquence de 1 et de 0 lisible par un ordinateur. Elle se réfère à une action bien plus vaste, et aux implications encore insoupçonnées : **numériser non plus des documents, mais tous les aspects de la vie**.”
+.footnote[[Kenneth Cukier, “Mise en données du monde, le déluge numérique”](https://www.monde-diplomatique.fr/2013/07/CUKIER/49318)]
+
+---
+
+## La "nombrification" du monde
+
+.pull-left[.reduite[![](https://datactivist.coop/opendatadays/1/img/couv_rey.jpg)]]
+.pull-right[
+> La numérisation ne serait pas survenue sans une "nombrification" préalable qui consiste à quantifier de plus en plus d'aspects de notre expérience du réel.
+> **Au commencement était le verbe, il semble à la fin que tout devient nombre.**
+> Personne ne saurait parler sérieusement de l'état de la société et discuter politique sans se référer aux informations quantitatives.]
+
+---
+Class: middle, center
+
+### La mise en données du monde
+
+- **Concrètement, aujourd'hui, quels aspects de votre vie sont mis en données ?**
+
+--
+
+- Recherches internet, pratiques sportives, consommation énergie, régime alimentaire, trajets dans les transports en commun...
+
+- Cette mise en donnée est rendue possible par le développement de .red[**capteurs**] qui viennent collecter et agréger ces données. **Avez-vous des exemples de capteurs ?**
+
+--
+
+- Recherches internet .red[(cookies)], pratiques sportives .red[(montres connectées)], consommation énergie .red[(compteurs connectés)], régime alimentaire .red[(appli type Yuka)], trajets dans les transports en commun .red[(Pass Navigo)]...
+
+- La question devient peut-être, *quels aspects de votre vie ne sont pas (encore) mis en données ?*
+
+---
+### Exemple : les données de bornage des téléphones
+
+[![](https://datactivist.coop/opendatadays/1/img/phonenyt.gif)](https://www.nytimes.com/interactive/2019/12/19/opinion/location-tracking-cell-phone.html)
+
+---
+### Le nouveau positivisme des données
+
+> Si vous me demandiez de décrire la philosophie naissante du jour, je dirais que c’est du **data-isme**. Nous sommes maintenant en mesure de collecter d'énormes quantités de données. Cette capacité semble comporter certaines hypothèses culturelles - à savoir que **tout ce qui peut être mesuré doit être mesuré; que les données constituent un filtre transparent et fiable nous permettant de mettre côté les émotions et l'idéologie**; ou encore que les données nous aideront à faire des choses remarquables - comme prédire l'avenir
+David Brooks, éditorialiste du New York Times, ["The Philosophy of Data"](https://www.nytimes.com/2013/02/05/opinion/brooks-the-philosophy-of-data.html)
+
+.center[![](img/brooks.png)]
+
+---
+### Le nouveau positivisme des données
+
+- Attention, les données, même provenant de sources officielles, ne sont pour autant neutres, irréprochables ou porteuses de "LA" vérité
+
+.center[<img src="https://datactivist.coop/opendatadays/1/img/baddata2.png" height="200"/>]
+
+- **Avez-vous des exemples de données officielles pouvant faire l'objet de critiques ?**
+--
+
+- Délinquance, immigration, SDF...
+
+.footnote[© Scott Adams]
+
+
+---
+
+### Exemple : les données de la déliquance
+
+.center.middle[
+<iframe width="560" height="315" src="https://www.youtube.com/embed/bMZ4YVrIY_s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+]
+
+---
+
+### Les données brutes sont un oxymore
+
+.pull-left[
+> Les données sont toujours "cuisinées" et jamais tout à fait "brutes"
+
+> Les données ont besoin au préalable d'être imaginées comme données pour exister et fonctionner comme telles. L'imagination de ces données implique une base d'interprétation
+]
+.pull-right[
+![](https://datactivist.coop/opendatadays/1/img/unitemesure.png)
+
+.footnote[© Xavier Gorce 2018]]
+
+.footnote[[Source](https://mitpress.mit.edu/books/raw-data-oxymoron)]
+---
+
+### Data or capta ?
+
+> Techniquement, ce que nous nous appelons "donnée" est généralement **"capturé"** (issu du latin "capere", signifiant "prendre"); ces unités de données qui ont été sélectionnées et collectées parmi l'ensemble de toutes les données possibles.
+
+[Kitchin, 2014](https://books.google.fr/books?hl=fr&lr=&id=GfOICwAAQBAJ&oi=fnd&pg=PP1&dq=kitchin+data+revolution&ots=pcyfMTZh-V&sig=dQyPTL3AIN_4RdWvtBFw4VjdAa4#v=onepage&q=kitchin%20data%20revolution&f=false)
+
+.center[<img src="https://datactivist.coop/opendatadays/1/img/robkitchin.jpg" height="250"/>] 
+
+---
+
+### Données ou obtenues ? 
+
+
+> Décidément, on ne devrait jamais parler de “données”, mais toujours d’ “obtenues”.
+[Bruno Latour, 1993](http://www.bruno-latour.fr/fr/node/255)
+
+.center[<img src="./img/latour.jpg" height="250"/>] 
 
 ---
 
@@ -282,10 +438,9 @@ Son logiciel "Visicalc", .red[démocratise la production des données] en propos
 <iframe width="560" height="315" src="https://www.youtube.com/embed/2a5ex5QlocQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ]
 
----
-class:center, middle, inverse
 
-# 3 - La fin des sciences ?
+---
+c
 ---
 
 ## Le déluge des données
@@ -310,82 +465,8 @@ La réflexion autour de la fin de la science part du constat de l'explosion de l
 En deux jours, l’humanité produit autant d'information que ce qu'elle a produit depuis la naissance de l'écriture jusqu’en 2003.
 
 ---
+lass:inverse,middle,center
 
-### C'est nouveau ce déluge ?
+## Merci ! 
 
-.pull-left[
-> *"Les perceptions d'une "surabondance informationnelle" (ou d'un "déluge de données") ont émergé de manière répétée depuis la Renaissance jusqu'aux périodes modernes et, à chaque fois, des technologies spécifiques ont été inventées pour gérer la surabondance perçue."*
-
-Strasser, B. J. (2012). "[Data-driven sciences: From wonder cabinets to electronic databases""](http://biologie.unige.ch/assets/brunostrasser//Strasser_SHPSSB_2012.pdf)
-]
-
-.pull-right[.reduite[[![deluge](./img/deluge.png)](https://www.medecinesciences.org/en/articles/medsci/full_html/2012/07/medsci2012282sp24/medsci2012282sp24.html)]]
-
----
-
-### La méthode scientifique est-elle obsolète ? 
-
-Les sciences sont traversées par la promesse d’un **.red[quatrième paradigme scientifique]**. Il suffirait alors d'**explorer les données pour .red[identifier des corrélations]** (une relation entre des phénomènes) et de **comprendre la causalité.** 
-
-> Le déluge des données rend la méthode scientifique obsolète, l’analyse des motifs et des relations contenues dans les données massives produit intrinsèquement un savoir significatif et éclairé sur des phénomènes complexes. Il y a maintenant une meilleure manière de faire. Les petabytes nous permettent de dire que « la corrélation suffit ». Nous pouvons analyser les données sans hypothèses sur ce qu’elles peuvent montrer.
-
-
-> Anderson, C. (2008) "[The end of theory: The data deluge makes the scientific method obsolete](https://www.wired.com/2008/06/pb-theory/)", *Wired*
-
----
-
-### Le risque : confondre corrélation et causalité
-
-Deux événements (appelons les X et Y) sont corrélés si l’on observe une relation entre les deux. Une erreur de raisonnement courante consiste à dire : « X et Y sont corrélés, donc X cause Y ». On .red[confond corrélation et causalité].
-
-**_L'effet cigogne_** désigne la tendance à confondre corrélation et causalité.
-
-.pull-left[<img src="./img/cigogne.jpg" height="180"/>]
-
-.pull-right["Dans les communes qui abritent des cigognes, le taux de natalité est plus élevé que dans l’ensemble du pays. Conclusion : les cigognes apportent les bébés ! En fait, les cigognes nichent de préférence dans les villages où la natalité est plus forte en milieu rural que dans les villes."
-]
-
-.footnote[Source : [cortecs.org](https://cortecs.org/materiel/effets-cigogne-correlation-vs-causalite/)]
-
----
-
-## Vous aussi, générez des corrélations absurdes
-
-.center[
-L'équipe des Décodeurs du *Monde* a produit un [générateur de comparaisons absurdes et parfois drôles](https://www.lemonde.fr/les-decodeurs/article/2019/01/02/correlation-ou-causalite-brillez-en-societe-avec-notre-generateur-aleatoire-de-comparaisons-absurdes_5404286_4355770.html), essayez le !
-
-[![](./img/generateur.png)](https://www.lemonde.fr/les-decodeurs/article/2019/01/02/correlation-ou-causalite-brillez-en-societe-avec-notre-generateur-aleatoire-de-comparaisons-absurdes_5404286_4355770.html)
-]
-
----
-
-### Le déluge des données à l'épreuve des sciences sociales
-
-Les sciences sociales n’échappent pas à la montée en puissance de la *data driven science*. Le *social computing* désigne une branche de l'informatique qui essaie de comprendre les comportements sociaux par l'analyse de données et l'usage d'outils informatiques. 
-
-Lev Manovich ([2011](http://manovich.net/content/04-projects/067-trending-the-promises-and-the-challenges-of-big-social-data/64-article-2011.pdf)) signale que **cette approche comporte plusieurs risques** : 
-* elle favorise les chercheurs ayant des liens officiels avec les industriels des réseaux sociaux qui vont fournir les données (difficile alors de les critiquer) ; 
-* des évidences pour les sciences humaines vont être présentées comme nouvelles ; 
-* à l'inverse, certains enseignements majeurs de la littérature des sciences humaines sont ignorés ; 
-* les traces numériques des réseaux sociaux sont perçues comme authentiques ignorant les multiples stratégies de gestion des identités des individus ;
-* ces recherches disposent d'une force rhétorique bien supérieure en s'appuyant sur les données de plusieurs millions d’individus. 
-
----
-
-### Une nouvelle ère dans la construction du savoir ?
-
-L'abondance des données amène à un renouvellement des technniques, ouvre de nouveaux champs d'études et remet parfois en cause des savoirs que l'on pensait acquis. 
-
-.pull-left[
-![](./img/memoiredeshommes.png)]
-
-.pull-right[
-> *L'indexation collaborative des fiches des soldats Morts pour la France sur le site Mémoire Des Hommes a permi de révéler que le jour de plus meurtrier de la Première Guerre mondiale pour les Français n'était pas le 22 août 1914.*]
-
----
-
-class: inverse, center, middle
-
-# Merci !
-
-Contact : [julia@datactivist.coop](mailto:julia@datactivist.coop)
+### Contact : samgoeta@hey.com

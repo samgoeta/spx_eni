@@ -1,0 +1,95 @@
+
+---
+class:center, middle, inverse
+
+# 3 - La fin des sciences ?
+---
+
+## Le déluge des données
+La réflexion autour de la fin de la science part du constat de l'explosion de la production de données comme l'illustre cette infographie sur les réseaux sociaux en une minute. 
+.pull-left[
+> "Avec suffisamment de données, les chiffres parlent d’eux-mêmes." 
+> Chris Anderson, journaliste *Wired Magazine*
+
+.footnote[[Consulter la source](http://internetactu.blog.lemonde.fr/2011/09/30/big-data-est-ce-que-le-deluge-de-donnees-va-rendre-la-methode-scientifique-obsolete/)]
+]
+.pull-right[
+.reduite.center[![](./img/internetminute2020.jpg)
+]
+]
+
+---
+
+## De plus en plus de données
+
+<img src="./img/internetminute2018.jpg" height="240"/> | <img src="./img/internetminute2019.jpg" height="240"/> | <img src="./img/internetminute2020.jpg" height="240"/>
+
+En deux jours, l’humanité produit autant d'information que ce qu'elle a produit depuis la naissance de l'écriture jusqu’en 2003.
+
+---
+
+### C'est nouveau ce déluge ?
+
+.pull-left[
+> *"Les perceptions d'une "surabondance informationnelle" (ou d'un "déluge de données") ont émergé de manière répétée depuis la Renaissance jusqu'aux périodes modernes et, à chaque fois, des technologies spécifiques ont été inventées pour gérer la surabondance perçue."*
+
+Strasser, B. J. (2012). "[Data-driven sciences: From wonder cabinets to electronic databases""](http://biologie.unige.ch/assets/brunostrasser//Strasser_SHPSSB_2012.pdf)
+]
+
+.pull-right[.reduite[[![deluge](./img/deluge.png)](https://www.medecinesciences.org/en/articles/medsci/full_html/2012/07/medsci2012282sp24/medsci2012282sp24.html)]]
+
+---
+
+### La méthode scientifique est-elle obsolète ? 
+
+Les sciences sont traversées par la promesse d’un **.red[quatrième paradigme scientifique]**. Il suffirait alors d'**explorer les données pour .red[identifier des corrélations]** (une relation entre des phénomènes) et de **comprendre la causalité.** 
+
+> Le déluge des données rend la méthode scientifique obsolète, l’analyse des motifs et des relations contenues dans les données massives produit intrinsèquement un savoir significatif et éclairé sur des phénomènes complexes. Il y a maintenant une meilleure manière de faire. Les petabytes nous permettent de dire que « la corrélation suffit ». Nous pouvons analyser les données sans hypothèses sur ce qu’elles peuvent montrer.
+
+
+> Anderson, C. (2008) "[The end of theory: The data deluge makes the scientific method obsolete](https://www.wired.com/2008/06/pb-theory/)", *Wired*
+
+---
+
+### Le risque : confondre corrélation et causalité
+
+Deux événements (appelons les X et Y) sont corrélés si l’on observe une relation entre les deux. Une erreur de raisonnement courante consiste à dire : « X et Y sont corrélés, donc X cause Y ». On .red[confond corrélation et causalité].
+
+**_L'effet cigogne_** désigne la tendance à confondre corrélation et causalité.
+
+.pull-left[<img src="./img/cigogne.jpg" height="180"/>]
+
+.pull-right["Dans les communes qui abritent des cigognes, le taux de natalité est plus élevé que dans l’ensemble du pays. Conclusion : les cigognes apportent les bébés ! En fait, les cigognes nichent de préférence dans les villages où la natalité est plus forte en milieu rural que dans les villes."
+]
+
+.footnote[Source : [cortecs.org](https://cortecs.org/materiel/effets-cigogne-correlation-vs-causalite/)]
+
+---
+
+## Vous aussi, générez des corrélations absurdes
+
+.center[
+L'équipe des Décodeurs du *Monde* a produit un [générateur de comparaisons absurdes et parfois drôles](https://www.lemonde.fr/les-decodeurs/article/2019/01/02/correlation-ou-causalite-brillez-en-societe-avec-notre-generateur-aleatoire-de-comparaisons-absurdes_5404286_4355770.html), essayez le !
+
+[![](./img/generateur.png)](https://www.lemonde.fr/les-decodeurs/article/2019/01/02/correlation-ou-causalite-brillez-en-societe-avec-notre-generateur-aleatoire-de-comparaisons-absurdes_5404286_4355770.html)
+]
+
+---
+
+### Le déluge des données à l'épreuve des sciences sociales
+
+Les sciences sociales n’échappent pas à la montée en puissance de la *data driven science*. Le *social computing* désigne une branche de l'informatique qui essaie de comprendre les comportements sociaux par l'analyse de données et l'usage d'outils informatiques. 
+
+Lev Manovich ([2011](http://manovich.net/content/04-projects/067-trending-the-promises-and-the-challenges-of-big-social-data/64-article-2011.pdf)) signale que **cette approche comporte plusieurs risques** : 
+* elle favorise les chercheurs ayant des liens officiels avec les industriels des réseaux sociaux qui vont fournir les données (difficile alors de les critiquer) ; 
+* des évidences pour les sciences humaines vont être présentées comme nouvelles ; 
+* à l'inverse, certains enseignements majeurs de la littérature des sciences humaines sont ignorés ; 
+* les traces numériques des réseaux sociaux sont perçues comme authentiques ignorant les multiples stratégies de gestion des identités des individus ;
+* ces recherches disposent d'une force rhétorique bien supérieure en s'appuyant sur les données de plusieurs millions d’individus. 
+
+---
+class:inverse,middle,center
+
+## Merci ! 
+
+### Contact : samgoeta@hey.com
