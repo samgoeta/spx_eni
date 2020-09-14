@@ -1,0 +1,391 @@
+---
+title: "Qu’est-ce qu’une donnée ? Petite histoire sociale des données et de leur exploitation"
+subtitle: "Séance 1"
+author: "Samuel Goëta, Sciences Po Aix / Datactivist, 2020-2021"
+date: ""
+output:
+  SlidesDatactivist::moon_reader:
+    css: [default, datactivist, datactivist-fonts]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+params:
+  event: Enjeux numériques de l'information
+---
+
+layout: true
+  
+
+`r paste0("<div class='my-footer'><span>", params$event, "</span> <center><div class=logo><img src='", system.file('rmarkdown', 'templates', 'xaringan', 'resources', 'img', 'accidents.png', package='SlidesDatactivist'), "' width='100px'></center></span></div>")` 
+
+---
+
+class: center, middle
+
+Ces slides en ligne : https://samgoeta.github.io/spx_eni/1.html
+
+Sources : https://github.com/samgoeta/spx_eni/
+
+
+Ce cours reprend en partie des productions de Datactivist qui sont librement réutilisables selon les termes de la licence [Creative Commons 4.0 BY-SA](https://creativecommons.org/licenses/by-sa/4.0/legalcode.fr).
+
+<BR>
+<BR>
+
+.center[<img src="./img/ccbysa.png" height="100"/>] 
+---
+## Plan du cours
+
+#### .red[1- "Au fait, c'est quoi une donnée ?"]
+
+Ecoutez ["l'interview de Serge Abiteboul, commissaire scientifique de l’exposition Terradata et directeur de recherche à l’Inria"](https://www.youtube.com/watch?v=qqvsiTUJy7k)
+
+#### .red[2- L'industrialisation de la production des données]
+
+Regardez [l'interview des créateurs de Visicalc](https://www.youtube.com/watch?v=2a5ex5QlocQ), le premier tableur 
+
+#### .red[3- La fin de la science ?]
+
+Lire l'article ["
+Big Data : est-ce que le déluge de données va rendre la méthode scientifique obsolète ?
+"](http://internetactu.blog.lemonde.fr/2011/09/30/big-data-est-ce-que-le-deluge-de-donnees-va-rendre-la-methode-scientifique-obsolete/)
+
+
+.center[**Quizz section 1**]
+
+---
+class:center, middle, inverse
+
+# Présentation du cours
+---
+### Objectifs du cours
+
+
+A l’ère dite du big data, l’attention portée sur les données toujours plus massives, véloces et diverses tend à occulter un phénomène plus large, celui de la mise en données du monde ou « /datafication/ » selon l’expression de Keneth Cukier. On ne numérise non plus des documents, mais tous les aspects de la vie qui sont capturés et mis en circulation sous la forme de données. 
+
+Ce cours prend pour parti de partir des données pour suivre certains des enjeux qui en découlent sur l'information et le savoir. En cela, il suit la figure courante (et critiquable) de la pyramide de l'information qui positionne les données comme le matériau brut de l'information et du savoir. 
+
+Les dix séances du cours parcoureront les enjeux liés aux données, à l'information et au savoir à travers des focus thématiques, des études de cas et des zooms sur les métiers associés.  
+
+
+---
+
+### Compétences acquises 
+
+* Intégrer une dimension données dans la compréhension des enjeux informationnels 
+
+* Etre capable de comprendre les enjeux liés aux données
+
+* Avoir des éléments de compréhension sur la circulation et la réutilisation des données 
+
+* Découvrir les nouvelles pratiques et les métiers associés aux données
+
+
+---
+### Contenu du cours par session
+
+.center[**Données**]
+
+#### Séance 1.Qu’est ce qu’une donnée ? Petite histoire de la mise en données du monde
+
+#### Séance 2.Les données dans leur diversité : type, formats, modes de collecte et de circulation
+
+—> Lecture obligatoire : Chapitre 1 « /conceptualising data »/  : Kitchin (2014), /The Data Revolution : Big Data, Open Data, Data Infrastructures and Their consequences/, Sage Publications. 
+
+#### Séance 3. Ethique des données, cadre juridique de la protection des données personnelles
+
+—> Lecture obligatoire : Documentaire « [Democracy](https://peertube3.cpy.re/videos/watch/39a38ea4-9dd8-482c-924e-6ce720070f2e) : la ruée vers les datas » 
+
+---
+### Contenu du cours par session
+
+.center[**Information**]
+
+#### Séance 4. Bonnes pratiques, pièges et écueils de la visualisation de données
+--> lecture à définir
+
+#### Séance 5. La visualisation de données en pratique : fonctions, formats, outils
+—> lecture à définir
+
+#### Séance 6. Data science : modélisation, machine learning et algorithmes
+—> Lecture obligatoire : Parasie&Dagiral (2016) , « [La science des données à la conquête des mondes sociaux. Ce que le Big Data doit aux épistémologies locales](http://books.openedition.org/cdf/4999?lang=fr)», in P.-M. Menger et S. Paye (dir.), /Big data et traçabilité numérique : les sciences sociales face à la quantification massive des individus/, Paris, Collège de France. 
+
+---
+### Contenu du cours par session
+
+#### Savoirs
+
+
+Séance 7. Science ouverte
+—> Lecture obligatoire :  Fecher B., Friesike S. (2014) Open Science: One Term, Five Schools of Thought. In: Bartling S., Friesike S. (eds) Opening Science. Springer, Cham. https://doi.org/10.1007/978-3-319-00026-8_2
+
+Séance 8. Journalisme de données
+—> Lecture obligatoire :  Parasie (2019), « [Data Journalism and the Promise of Transparency](https://sypar.files.wordpress.com/2019/05/2019-parasie_data-journalism-and-the-promise-of-transparency.pdf) »,  /The Routledge Companion to Media and Scandal/, Routledge
+
+Séance 9. Etude de l’opinion à partir des données
+—> Lecture à définir
+
+Séance 10. Factualité et monde post-statistiques 
+—> Lecture obligatoire :  Davies (2017), « [Comment la statistique a perdu son pouvoir et pourquoi nous devrions craindre ce qui va suivre](http://revues-sfds.math.cnrs.fr/index.php/stat_soc/article/view/608/571) », /Statistiques et société. 
+
+---
+
+## Modalités d'évaluation
+
+La note sera attribuée avec la moyenne de 3 dispositifs d'évaluation : 
+1. un questionnaire à chaque cours portant sur une lecture obligatoire (un tiers de la classe par séance)
+
+2. une vidéo de 7 minutes réalisée en groupe de 2-3 étudiant·e·s présentant un documentaire sur les enjeux numériques de l'information ([liste en cours de mise à jour](https://www.senscritique.com/liste/Documentaires_sur_l_Internet/1162059))
+
+3. une évaluation finale sous la forme d'un questionnaire portant sur l'intégralité des séances du cours
+
+---
+class:center, middle, inverse
+
+# 1 - Au fait, c'est quoi une donnée ?
+---
+
+## Introduction 
+
+[Interview de Serge Abiteboul](https://www.youtube.com/watch?v=qqvsiTUJy7k), commissaire scientifique de l'exposition Terradata et directeur de recherche à l'Inria :
+
+.center[
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qqvsiTUJy7k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+]
+
+---
+Classe: middle
+
+## Une définition des données
+
+.pull-left[
+![](./img/kitchin.png)
+]
+ 
+.pull-right[
+ 
+> *Les données sont couramment comprises comme les matériaux bruts produits dans l’abstraction du monde en catégories, mesures et toute autre forme de représentation-nombres, caractères, symboles, images, sons, ondes électromagnétiques, bits qui constituent les fondations sur lesquelles l’information et le savoir sont créés.*
+]
+
+---
+
+## Les données sont partout !
+
+.center[<img src="./img/dataeverywhere.png" height="350"/>]
+
+
+#### Identifiez 3 appareils qui collectent des données 
+
+.footnote[source : [The Economist](http://lazowska.cs.washington.edu/escience/Economist.big.data.pdf)]
+
+---
+
+### La pyramide Data-Information-Knowledge-Wisdom
+
+Attribuée à [Russell Ackoff](http://en.wikipedia.org/wiki/Russell_L._Ackoff) en 1989, elle signfie que :
+.pull-left[
+![largeur](./img/dikw_pyramid.svg)
+]
+
+.pull-right[
+
+- Les **.red[données]** sont la matière "brute" de l'information conçues plutôt pour des machines.
+- **.red[L'information]** pourrait être définie comme des données qui ont été interprétées pour dégager du sens pour des humains.
+- En donnant du sens à de l'information, on obtient de la **.red[connaissance]**
+- En donnant du sens à la connaissance on obtient de la **.red[sagesse]**.]
+
+---
+Class:
+## La pyramide Data-Information-Knowledge-Wisdom
+
+.center[<img src="./img/competence.png" height="300"/>]
+
+_NB : le haut de la pyramide, est parfois remplacé par "compétence"_
+
+---
+
+### Les données, la base de l'informatique
+
+La naissance de l'informatique est le point de départ d'un déluge de données. Tout ce qui circule dans un ordinateur, ce sont des données. Elles sont la base de l'informatique.
+
+.pull-left[![](./img/volume.png)]
+.pull-right[
+Pensez à votre abonnement téléphonique, chaque mois, vous payez pour consommer un certain volume de données quantifié en octet ou en bit. 
+
+Le volume des données créées et traitées ne cesse de croitre en même temps que les capacités de calcul des ordinateurs. 
+]
+
+---
+class:center, middle, inverse
+
+# 2 - L'industrialisation de la production des données
+
+---
+
+### La tablette mésopotanienne : inscrire une réalité complexe
+Vers 3200 av. J.-C., en Mésopotamie, la civilisation sumérienne a inventé l’écriture d'abord pour mémoriser des comptes.
+
+
+.pull-left[
+<img src="./img/tabletteargile.png" height="300"/>
+]
+
+.pull-right[
+>Arbres et têtes de bétails sont classés pour être comptabilisés. On a bien affaire ici à des données.
+]
+---
+
+### La carte perforée (1884) : le début de la massification des données
+
+Apparue au départ dans les métiers à tisser, les carte perforées contiennent des informations représentées par la présence ou l'absence de trous dans une position donnée.
+
+.pull-left[
+.middle[![](https://upload.wikimedia.org/wikipedia/commons/f/f2/Hollerith_punched_card.jpg)]
+]
+.pull-right[
+Elles sont les premières mémoires de masse utilisées dans l'informatique au XIXe siècle.
+
+En 1884, Herman Hollerith a déposé un brevet pour une machine à cartes perforées destinée à accélérer la production de statistiques pour les gouvernements. Deux ans plus tard, il crée IBM le géant de l'informatique.  
+]
+
+.footnote[Vidéo de l'INA : [La carte perforée](https://m.ina.fr/video/CAF97059686/la-carte-perforee-video.html)]
+---
+
+### Les bases de données relationnelles (1970)
+
+Dans les bases de données relationnelles, les données sont inscrites dans des tables et reliées entre elles par un schéma et des identifiants uniques. Cela permet de traiter de plus grands volumes, de développer des données plus complexes et d'éviter des erreurs de saisie.
+
+.pull-left[
+![](./img/sql.jpeg)]
+
+.pull-right[
+Les bases de données relationnelles facilitent grandement le traitement des données puisqu'elles paraissent à travers une interface utilisateur : « il faut protéger les futurs usagers de grandes banques de données d’avoir à connaitre comment les données sont organisées dans la machine » (Codd 1970).
+]
+
+---
+### Le tableur (1979) : *data to the people*
+
+En 1979, Dan Bricklin, un ancien analyste financier exaspéré par les techniques de calcul encore manuelles, a imaginé une technique de calcul visible (« *Visible Calculator* »). 
+
+Son logiciel "Visicalc", .red[démocratise la production des données] en proposant le système de la feuille de calcul sur laquelle les données peuvent être directement manipulées : 
+
+> "La facilité d’utilisation de Visicalc provenait du fait que l’utilisateur n’avait pas besoin de connaitre de langage de programmation. Sur cet aspect, Visicalc était **l’équivalent du traitement de texte** dans lequel un utilisateur arrange directement l’impression de la page, à l’opposé des systèmes d’écriture où l’utilisateur devait inscrire un ensemble d’inscriptions pour mettre en page le texte." ([Campbell-Kelly, 2007](http://www.oxfordscholarship.com/view/10.1093/acprof:oso/9780198508410.001.0001/acprof-9780198508410))
+
+---
+
+### Le tableur (1979) : *data to the people*
+
+.center[ Dan Bricklin et Bob Frankston ont inventé le tableur, le premier logiciel de calcul de masse. Découvrez en 5 minutes leur invention : 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2a5ex5QlocQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+]
+
+---
+class:center, middle, inverse
+
+# 3 - La fin des sciences ?
+---
+
+## Le déluge des données
+La réflexion autour de la fin de la science part du constat de l'explosion de la production de données comme l'illustre cette infographie sur les réseaux sociaux en une minute. 
+.pull-left[
+> "Avec suffisamment de données, les chiffres parlent d’eux-mêmes." 
+> Chris Anderson, journaliste *Wired Magazine*
+
+.footnote[[Consulter la source](http://internetactu.blog.lemonde.fr/2011/09/30/big-data-est-ce-que-le-deluge-de-donnees-va-rendre-la-methode-scientifique-obsolete/)]
+]
+.pull-right[
+.reduite.center[![](./img/internetminute2020.jpg)
+]
+]
+
+---
+
+## De plus en plus de données
+
+<img src="./img/internetminute2018.jpg" height="240"/> | <img src="./img/internetminute2019.jpg" height="240"/> | <img src="./img/internetminute2020.jpg" height="240"/>
+
+En deux jours, l’humanité produit autant d'information que ce qu'elle a produit depuis la naissance de l'écriture jusqu’en 2003.
+
+---
+
+### C'est nouveau ce déluge ?
+
+.pull-left[
+> *"Les perceptions d'une "surabondance informationnelle" (ou d'un "déluge de données") ont émergé de manière répétée depuis la Renaissance jusqu'aux périodes modernes et, à chaque fois, des technologies spécifiques ont été inventées pour gérer la surabondance perçue."*
+
+Strasser, B. J. (2012). "[Data-driven sciences: From wonder cabinets to electronic databases""](http://biologie.unige.ch/assets/brunostrasser//Strasser_SHPSSB_2012.pdf)
+]
+
+.pull-right[.reduite[[![deluge](./img/deluge.png)](https://www.medecinesciences.org/en/articles/medsci/full_html/2012/07/medsci2012282sp24/medsci2012282sp24.html)]]
+
+---
+
+### La méthode scientifique est-elle obsolète ? 
+
+Les sciences sont traversées par la promesse d’un **.red[quatrième paradigme scientifique]**. Il suffirait alors d'**explorer les données pour .red[identifier des corrélations]** (une relation entre des phénomènes) et de **comprendre la causalité.** 
+
+> Le déluge des données rend la méthode scientifique obsolète, l’analyse des motifs et des relations contenues dans les données massives produit intrinsèquement un savoir significatif et éclairé sur des phénomènes complexes. Il y a maintenant une meilleure manière de faire. Les petabytes nous permettent de dire que « la corrélation suffit ». Nous pouvons analyser les données sans hypothèses sur ce qu’elles peuvent montrer.
+
+
+> Anderson, C. (2008) "[The end of theory: The data deluge makes the scientific method obsolete](https://www.wired.com/2008/06/pb-theory/)", *Wired*
+
+---
+
+### Le risque : confondre corrélation et causalité
+
+Deux événements (appelons les X et Y) sont corrélés si l’on observe une relation entre les deux. Une erreur de raisonnement courante consiste à dire : « X et Y sont corrélés, donc X cause Y ». On .red[confond corrélation et causalité].
+
+**_L'effet cigogne_** désigne la tendance à confondre corrélation et causalité.
+
+.pull-left[<img src="./img/cigogne.jpg" height="180"/>]
+
+.pull-right["Dans les communes qui abritent des cigognes, le taux de natalité est plus élevé que dans l’ensemble du pays. Conclusion : les cigognes apportent les bébés ! En fait, les cigognes nichent de préférence dans les villages où la natalité est plus forte en milieu rural que dans les villes."
+]
+
+.footnote[Source : [cortecs.org](https://cortecs.org/materiel/effets-cigogne-correlation-vs-causalite/)]
+
+---
+
+## Vous aussi, générez des corrélations absurdes
+
+.center[
+L'équipe des Décodeurs du *Monde* a produit un [générateur de comparaisons absurdes et parfois drôles](https://www.lemonde.fr/les-decodeurs/article/2019/01/02/correlation-ou-causalite-brillez-en-societe-avec-notre-generateur-aleatoire-de-comparaisons-absurdes_5404286_4355770.html), essayez le !
+
+[![](./img/generateur.png)](https://www.lemonde.fr/les-decodeurs/article/2019/01/02/correlation-ou-causalite-brillez-en-societe-avec-notre-generateur-aleatoire-de-comparaisons-absurdes_5404286_4355770.html)
+]
+
+---
+
+### Le déluge des données à l'épreuve des sciences sociales
+
+Les sciences sociales n’échappent pas à la montée en puissance de la *data driven science*. Le *social computing* désigne une branche de l'informatique qui essaie de comprendre les comportements sociaux par l'analyse de données et l'usage d'outils informatiques. 
+
+Lev Manovich ([2011](http://manovich.net/content/04-projects/067-trending-the-promises-and-the-challenges-of-big-social-data/64-article-2011.pdf)) signale que **cette approche comporte plusieurs risques** : 
+* elle favorise les chercheurs ayant des liens officiels avec les industriels des réseaux sociaux qui vont fournir les données (difficile alors de les critiquer) ; 
+* des évidences pour les sciences humaines vont être présentées comme nouvelles ; 
+* à l'inverse, certains enseignements majeurs de la littérature des sciences humaines sont ignorés ; 
+* les traces numériques des réseaux sociaux sont perçues comme authentiques ignorant les multiples stratégies de gestion des identités des individus ;
+* ces recherches disposent d'une force rhétorique bien supérieure en s'appuyant sur les données de plusieurs millions d’individus. 
+
+---
+
+### Une nouvelle ère dans la construction du savoir ?
+
+L'abondance des données amène à un renouvellement des technniques, ouvre de nouveaux champs d'études et remet parfois en cause des savoirs que l'on pensait acquis. 
+
+.pull-left[
+![](./img/memoiredeshommes.png)]
+
+.pull-right[
+> *L'indexation collaborative des fiches des soldats Morts pour la France sur le site Mémoire Des Hommes a permi de révéler que le jour de plus meurtrier de la Première Guerre mondiale pour les Français n'était pas le 22 août 1914.*]
+
+---
+
+class: inverse, center, middle
+
+# Merci !
+
+Contact : [julia@datactivist.coop](mailto:julia@datactivist.coop)
