@@ -440,10 +440,10 @@ Son logiciel "Visicalc", .red[démocratise la production des données] en propos
 
 
 ---
-c
+
 ---
 
-## Le déluge des données
+### Le déluge des données
 La réflexion autour de la fin de la science part du constat de l'explosion de la production de données comme l'illustre cette infographie sur les réseaux sociaux en une minute. 
 .pull-left[
 > "Avec suffisamment de données, les chiffres parlent d’eux-mêmes." 
@@ -458,14 +458,14 @@ La réflexion autour de la fin de la science part du constat de l'explosion de l
 
 ---
 
-## De plus en plus de données
+### De plus en plus de données
 
 <img src="./img/internetminute2018.jpg" height="240"/> | <img src="./img/internetminute2019.jpg" height="240"/> | <img src="./img/internetminute2020.jpg" height="240"/>
 
 En deux jours, l’humanité produit autant d'information que ce qu'elle a produit depuis la naissance de l'écriture jusqu’en 2003.
 
 ---
-lass:inverse,middle,center
+class:inverse,middle,center
 
 ## Merci ! 
 

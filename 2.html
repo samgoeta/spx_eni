@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <title>Les données dans leur diversité : type, formats, modes de collecte et de circulation</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Samuel Goëta, Sciences Po Aix" />
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/datactivist.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/datactivist-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Les données dans leur diversité : type, formats, modes de collecte et de circulation
+## Enjeux numériques de l’information
+### Samuel Goëta, Sciences Po Aix
+
+---
+
+
+layout: true
+  
+
+&lt;div class='my-footer'&gt;&lt;span&gt;Les données dans leur diversité (type, formats, modes de collecte et de circulation)&lt;/span&gt; &lt;center&gt;&lt;div class=logo&gt;&lt;img src='' width='100px'&gt;&lt;/center&gt;&lt;/span&gt;&lt;/div&gt; 
+
+---
+
+class: center, middle
+
+Ces slides en ligne : https://samgoeta.github.io/spx_eni/2.html
+
+Sources : https://github.com/samgoeta/spx_eni/
+
+
+Ce cours reprend en partie des productions de Datactivist qui sont librement réutilisables selon les termes de la licence [Creative Commons 4.0 BY-SA](https://creativecommons.org/licenses/by-sa/4.0/legalcode.fr).
+
+&lt;BR&gt;
+&lt;BR&gt;
+
+.center[&lt;img src="./img/ccbysa.png" height="100"/&gt;] 
+
+
+---
+
+## Données quantitatives
+.pull-left[
+Différents types de variables : 
+- **Nominale** : des catégories que l’on nomme avec un nom (marié/célibataire/divorcé/veuf)
+
+
+- **Ordinale** : échelle de mesure dotant chaque élément d'une valeur qui permet leur classement par ordre de grandeur (faible, moyen, fort)
+
+
+- **Intervalles** : l’intervalle entre deux catégories a toujours la même valeur (12-16°C / 16-20°C / 20-24°C) 
+]
+.pull-right[
+![](img/spread.png)
+]
+
+---
+
+## Données qualitatives
+
+.pull-left[
+Ce sont des données non numériques, par exemple du texte, des images, de la vidéo, du son...
+
+  + Ces données peuvent être converties en données quantitatives
+
+  + Mais on risque de perdre la richesse des données originales
+  
+  + Il est possible de réaliser une analyse qualitative de ces données
+  
+]
+.pull-right[
+![](img/text_mining_intro_2.png)
+]
+
+---
+### Exemple : les annotations en text mining
+
+&gt; L’annotation (ou l’étiquetage) est une tâche plus spécifiquement linguistique que les précédentes, au sens où elle ne s’applique pas, aux données tabulaires et ne relève donc pas de la fouille de données (data mining)
+
+.center[&lt;img src="./img/text_mining3.png" height="250"/&gt;]
+
+.footnote[Source : [Introduction à la fouille de textes université de Paris 3 - Sorbonne Nouvelle](http://www.lattice.cnrs.fr/sites/itellier/poly_fouille_textes/fouille-textes.pdf)]
+---
+### Exemple : les annotations en text mining
+
+&gt; La donnée est exclusivement un texte brut ou un document semi-structuré non
+transformé en tableau : elle est donc composée d’unités respectant au moins
+une relation d’ordre.
+
+&gt; L’ensemble des étiquettes possibles est fini et connu à l’avance au moment où
+le programme est appelé. Le résultat est la donnée initiale dans laquelle chaque unité est associée à une étiquette prise dans l’ensemble des étiquettes possibles 
+
+&gt; L’annotation peut aussi s’appliquer à d’autres données structurées que les textes : .red[on peut ainsi annoter des séquences audio ou vidéo], ou des bases de données XML par exemple. On parlera d’annotation quand la structure de la donnée d’origine se trouve ”reproduite” sur les étiquettes ajoutées par le programme.
+
+.footnote[Source : [Introduction à la fouille de textes université de Paris 3 - Sorbonne Nouvelle](http://www.lattice.cnrs.fr/sites/itellier/poly_fouille_textes/fouille-textes.pdf)]
+---
+### Exemple : La Grande Annotation 
+
+**L'objectif ?** Faire en sorte que les contributions au grand débat puissent être lues et comprises. Tout un chacun peut, sur le site [grandeannotation.fr](https://grandeannotation.fr/) lire ces textes, classés par thème et par question, et les annoter pour en révéler le sens.
+
+.center[&lt;img src="./img/grande_annotation1.png" height="200"/&gt;]
+
+Plutôt que d'obtenir une synthèse des contributions au grand débat qui soit non collaborative, opaque (car réalisée par quelques sociétés) et en partie traitée par de l'intelligence artificielle, la Grande Annotation veut construire une synthèse collective, transparente et fondée sur l'intelligence humaine.
+
+---
+### Exemple : La Grande Annotation 
+
+**Vous aussi vous pouvez contribuer en annotant les réponses au grand débat !**
+Ce faisant, vous créez de fait de nouvelles données qui viennent qualifier et enrichir les données initiales.
+
+.center[&lt;img src="./img/grande_annotation2.png" height="370"/&gt;]
+
+---
+
+### Données structurées
+
+.pull-left[
+Des données dotées d'un modèle qui définit les relations entre les composantes de la base de données
+
+  + Ex : base de données relationnelle SQL
+  
+  + Lisibles machine
+  
+  + Faciles à analyser, manipuler, visualiser...
+]
+.pull-right[
+![](img/sql.jpeg)
+]
+
+---
+
+### Données structurées
+
+Un exemple concret : le schéma de la base de données relationnelle derrière [la plateforme Datagora](https://www.datagora.fr/) 
+
+.center[&lt;img src="./img/schema_bdd_datagora.png" height="380"/&gt;]
+
+---
+
+### Données semi-structurées
+
+.pull-left[
+Pas de modèle prédéfini : structure irrégulière, implicite... mais données organisées néanmoins, ensemble raisonnable de champs
+
+Exemple : XML, JSON
+
+Possible de trier, ordonner et structurer les données
+]
+.pull-right[
+![](img/ocdsjson.jpg)
+]
+
+---
+
+### Données non structurées
+
+.pull-left[Pas de structure commune identifiable
+Exemple : BDD NoSQL
+
+Généralement qualitatives
+
+Difficilement combinées ou analysées quantitativement
+
+Les données non structurées croitraient 15x plus que les données structurées
+ 
+Le machine learning est de plus en plus capable d'analyser ces données. *Voir sections 9 et 10*]
+
+.pull-right[
+![](img/structured-vs-unstructured-data.png)
+]
+
+---
+
+### Données capturées, échappées, transitoires 
+
+** Données capturées**
+
+Données issues d'observations, d'enquêtes, d'expérimentations, de prise de notes, de senseurs... =&gt; il y a eu l'**intention de générer des données**
+
+** Données échappées**
+
+Sous-produit d'un engin ou d'un système dont la fonction première est autre
+** Avez-vous des exemples de données échappées ?**
+--
+&lt;BR&gt;
+Parking, borne d'accès... =&gt; Des données sur les horaires d'accès, le nombre d'ouvertures, fermetures, la fréquentation
+
+** Données transitoires**
+
+Ce sont des données échappées qui ne sont jamais examinées, transformées ou analysées
+
+
+---
+### Données dérivées
+
+Résultat d'un traitement ou d'une analyse supplémentaire de données capturées. 
+
+Exemple avec les [données de Google Maps](https://www.justinobeirne.com/google-maps-moat) : 
+
+![](https://static1.squarespace.com/static/54ff63f0e4b0bafce6932642/t/5a383fdb41920241ebce859d/1513635810327/3-1+-+Making+AOIs.gif?format=1500w)
+
+Recommandé : Lire l'article ["GOOGLE MAPS’S MOAT - How far ahead of Apple Maps is Google Maps?"](https://www.justinobeirne.com/google-maps-moat)
+
+---
+
+### Les données crowdsourcées
+
+Des données produites par des citoyens, des communs partagés et gouvernés par leurs producteurs.
+
+Concrètement, les données sont issues du travail collaboratif de divers acteurs, bénévoles, dans la récolte sur le terrain.
+
+**Connaissez-vous un site ou une application fonctionnant via des données crowdsourcées ?**
+
+--
+
+.pull-left[Exemple : OpenStreetMap, le wiki de la carte]
+
+.pull-right[
+.reduite[![](img/osm.png)]
+]
+
+---
+### Exemple 1 : OpenStreetMap
+
+&gt; Pourquoi faites-vous OpenStreetMap ? 
+Les données géographiques (géo-données) ne sont pas libres dans nombre de régions du monde, par exemple en France, en Belgique, au Canada. En général, ces régions ont confié la tâche de cartographie à diverses agences gouvernementales, qui en retour font de l'argent en revendant les données à des gens comme vous et moi. Si vous vivez dans un de ces pays, alors vos impôts servent à payer le travail de cartographie
+
+&gt; En France certaines données du ministère des finances (données cadastrales pour l'identification des parcelles) peuvent être réutilisées comme référence, mais avec des conditions qui ne permettent pas une exploitation massive permettant d'obtenir une carte complète (leur précision ne permet pas nécessairement d'identifier tous les chemins, rues et routes qui traversent une même parcelle ; de plus elles ne sont souvent plus à jour).
+
+.footnote[ Source : [La FAQ d'OpenStreetMap](https://wiki.openstreetmap.org/wiki/FR:FAQ#Pourquoi_n.27utilisez_vous_pas_Google_Maps_ou_untel_pour_vos_donn.C3.A9es_.3F)]
+
+---
+### Exemple 1 : OpenStreetMap
+
+En résumé :
+
++ OpenStreetMap (OSM) est un projet de cartographie qui a pour but de constituer une base de données géographiques libre du monde (permettant par exemple de créer des cartes sous licence libre), en utilisant le système GPS et d'autres données libres.
+
++ À la manière de Wikipédia, **tous les internautes naviguant sur le web peuvent contribuer à la création et à la numérisation de cartes**. Des éditeurs permettent de réaliser en ligne des cartes en se basant sur un fond d'image satellitaire. Cependant, ces images satellitaires ne couvrent pas toujours en haute résolution l'ensemble du globe. C'est pourquoi il est possible d'introduire des données provenant de récepteurs GPS. Il suffit pour cela de réaliser un itinéraire et de positionner le récepteur en mode enregistrement, puis de le restituer sur le serveur de données d'OpenStreetMap 
+
+---
+### Exemple 1 : OpenStreetMap
+
+Vous aussi vous pouvez contribuer à OpenStreetMap !
+
+.center[&lt;img src="./img/openstreetmap.png" height="400"/&gt;] 
+
+---
+### Les objets d'OpenStreetMap
+.reduite[![](https://datactivist.coop/atelier-osm/img/nodes.png) ]
+.footnote[CC BY-SA esambale on slideshare]
+
+---
+### Un monde de tags
+.reduite[.center[![](https://datactivist.coop/atelier-osm/img/tags.png)]]
+.footnote[CC BY-SA esambale on slideshare]
+
+---
+### Le principe d'un tag : KEY=VALUE
+.reduite[.center[![](https://datactivist.coop/atelier-osm/img/keyvalue.png)]]
+.footnote[CC BY-SA esambale on slideshare]
+
+---
+### « Elements cartographiques » : la bible des tags
+.reduite[.center[[![](https://datactivist.coop/atelier-osm/img/mapfeature.png)](http://wiki.openstreetmap.org/wiki/FR:Éléments_cartographiques)]]
+.footnote[http://wiki.openstreetmap.org/wiki/FR:Éléments_cartographiques]
+
+---
+### Comment cartographier un ... ? 
+.reduite[.center[![comment](https://datactivist.coop/atelier-osm/img/comment.png)]]
+.footnote[[Lien vers la page wiki](http://wiki.openstreetmap.org/wiki/FR:Comment_cartographier_un..)]
+
+---
+
+### Exercice : trouver les tags suivants
+
+.pull-left[
+
+1. Autoroute 
+
+2. Piste cyclable
+
+3. Musée
+
+4. Aéroport
+
+5. Boulangerie
+
+]
+
+---
+
+### Solution : trouver les tags suivants
+
+.pull-left[
+
+1. Autoroute 
+
+2. Piste cyclable
+
+3. Musée
+
+4. Aéroport
+
+5. Boulangerie
+]
+.pull-right[
+1. Highway=motorway 
+
+2. highway=cycleway ou cycleway=*
+
+3. Tourism=museum
+
+4. Aeroway=aerodrome
+
+5. Shop=bakery]
+
+---
+### Découverte d’Overpass
+.reduite[![](https://datactivist.coop/atelier-osm/img/overpass.png)]
+.footnote[http://overpass-turbo.eu]
+
+---
+### Exercice : cartographier les éléments suivants
+
+
+* Les boulangeries à Angers
+
+* Les pistes cyclables à Auxerre
+
+* Les aéroports en Bourgogne
+
+* Les boites aux lettres à Aix en Provence 
+
+**Plus dur :**
+
+* Les lignes électriques en corse
+
+* Les « potelets » à Marseille
+
+---
+### Exemple 2 : OpenFoodFacts
+
+.center[&lt;img src="./img/openfoodfacts.png" height="200"/&gt;] 
+
+&gt; Open Food Facts est une base de données sur les produits alimentaires faite par tout le monde, pour tout le monde. Elle vous permet de faire des choix plus informés, et comme les données sont ouvertes (open data), tout le monde peut les utiliser pour tout usage.
+
+&gt; Open Food Facts est un projet citoyen à but non lucratif créé par des milliers de volontaires à travers le monde. Vous pouvez commencer à contribuer en ajoutant un produit de votre cuisine, et nous avons plein de projets enthousiasmants auxquels vous pouvez participer de beaucoup de façons différentes.
+
+---
+### Exemple 2 : OpenFoodFacts
+
+Vous aussi vous pouvez contribuer à OpenFoodFacts !
+
+
+.center[[&lt;img src="./img/openfoodfacts2.png" height="400"/&gt;](https://fr.openfoodfacts.org/contribuer)]
+
+---
+### Exemple 2 : OpenFoodFacts  
+
+Et vous connaissez très probablement une application qui utilise les données d'OpenFoodFacts pour "évaluer" la composition des produits alimentaires...
+
+--
+
+**Yuka** ! Avec plus de 8 millions d'utilisateurs en février 2019, elle a désormais un impact non négligeable, y compris dans la stratégie des grandes marques de l'agroalimentaire..
+
+.center[[&lt;img src="./img/yuka.png" height="300"/&gt;](https://www.liberation.fr/desintox/2018/05/18/yuka-est-elle-une-appli-publicitaire-deguisee_1651227)]
+
+
+---
+class: inverse, center, middle
+
+# Merci !
+
+Contact : [timothee@datactivi.st](mailto:timothee@datactivi.st)
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();</script>
+
+<script>
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
