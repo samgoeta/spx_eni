@@ -1,0 +1,357 @@
+---
+title: "Ethique des données, cadre juridique de la protection des données personnelles"
+subtitle: "Enjeux numériques de l'information"
+author: "Samuel Goëta, Sciences Po Aix"
+date: ""
+output:
+  SlidesDatactivist::moon_reader:
+    css: [default, datactivist, datactivist-fonts]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+params:
+  event: Ethique des données, cadre juridique de la protection des données personnelles
+---
+
+layout: true
+  
+
+`r paste0("<div class='my-footer'><span>", params$event, "</span> <center><div class=logo><img src='", system.file('rmarkdown', 'templates', 'xaringan', 'resources', 'img', 'accidents.png', package='SlidesDatactivist'), "' width='100px'></center></span></div>")` 
+
+---
+
+class: center, middle
+
+Ces slides en ligne : https://samgoeta.github.io/spx_eni/3.html
+
+Sources : https://github.com/samgoeta/spx_eni/
+
+
+Ce cours reprend en partie des productions de Datactivist qui sont librement réutilisables selon les termes de la licence [Creative Commons 4.0 BY-SA](https://creativecommons.org/licenses/by-sa/4.0/legalcode.fr).
+
+<BR>
+<BR>
+
+.center[<img src="./img/ccbysa.png" height="100"/>] 
+
+
+---
+class:inverse,middle,center
+
+## Avant de commencer
+
+### Précisions sur l'exercice
+
+---
+### La revue de documentaire
+
+* Un travail en groupe de 3 ou 4 personnes, **obligatoirement mélange des deux parcours**
+
+* Choisissez un documentaire dans la liste qui suit
+
+* Produisez un podcast de 5 à 7 minutes pour le vendredi 20 novembre
+
+* Uploadez votre podcast sur la plateforme de votre choix (Soundcloud par exemple)
+
+* Remplissez le formulaire suivant : 
+
+---
+### Contenu du podcast 
+
+* Un résumé du documentaire
+
+* Des extraits (traduits et doublés si nécessaires), pas trop longs pour rester audible
+
+* Un retour critique expliquant pourquoi le voir
+
+* Un aperçu des enseignements de ce documentaire pour la compréhension des enjeux numériques de l'information 
+
+Outils : [Audacity](https://www.audacityteam.org/), [Anchor](https://anchor.fm/), Garage Band
+
+Attention à la qualité d'enregistrement du son et à bien égaliser les voix
+
+---
+### Les films au choix 
+
+<iframe class="airtable-embed" src="https://airtable.com/embed/shrTYYZlbieVgVxEa?backgroundColor=gray" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+
+---
+class:inverse, middle
+
+## [Inscrivez vous !](https://airtable.com/shrcPxV1MlPMLBilL)
+---
+
+class:inverse, middle, center
+
+# Retour sur les données crowdsourcées
+
+
+---
+class: inverse, center, middle
+
+# Éléments du cadre juridique de l'open data
+
+---
+
+### Le guide CADA-CNIL : le document de référence
+
+Je n'indique ici que quelques éléments généraux sur le cadre juridique, ce guide constitue votre source de référence. Joël Gombin, co-fondateur de Datactivist, a publié sa [fiche de lecture](https://teamopendata.org/t/guide-commun-cnil-et-cada-open-data-rgpd/1320) sur TeamOpenData.
+
+.reduite[.center[
+[![](https://datactivist.coop/aaf/img/guide.png)](https://www.cnil.fr/sites/default/files/atoms/files/guide_open_data.pdf)
+]]
+
+---
+
+### 1978 : La loi CADA, vers le "droit de savoir"
+* Le fondement : la .red[Déclaration des Droits de l'Homme et du Citoyen de 1789] dans son article 15, "la Société a le droit de demander compte à tout Agent public de son administration." 
+
+* Le droit d'accès des citoyens à l'information publique émerge en **1978 avec la loi dite CADA** du nom de la Commission d'Accès aux Documents Administratifs. 
+
+* La France était le .red[3e pays au monde] après la Suède en 1766 et les Etats-Unis en 1966 avec le Freedom of Information Act (FOIA) en 1966  à accorder un "droit de savoir" avec pour but d'améliorer les relations entre le public et l'administration.
+
+.footnote[Il faudrait maintenant désigner la loi comme le Code des relations entre le public et l'administration (CRPA) qui, dans son [livre 3](https://www.legifrance.gouv.fr/affichCode.do;jsessionid=BDF8EC0BD562E214CCD9A5ADD435D690.tplgfr42s_1?idSectionTA=LEGISCTA000031367685&cidTexte=LEGITEXT000031366350&dateTexte=20190429), codifie le droit d'accès et de réutilisation mais il est encore moins connu que la loi CADA…]
+
+---
+### La loi CADA : un point noir dans la transparence de la vie publique
+
+Même si la France est le 3e pays à avoir adopté un droit d'accès, la loi CADA n'est pas un outil fort de la transparence de la vie publique. Ses principaux défauts : l'absence de sanctions et une procédure longue qui décourage les demandeurs et favorise le contournement par les administrations. 
+[![](https://datactivist.coop/aaf/img/europam.png)](http://europam.eu/?module=country-profile&country=France)
+
+---
+
+### Un droit d'accès très faible au regard des standards internationaux
+
+.pull-left[Paradoxe : la France a une législation parmi les plus ambitieuses au monde en matière d'open data mais le droit d'accès y est un des plus mauvais au monde… 
+
+La France est classée .red[105e sur 123] du classement mondial des lois d'accès à l'information publique RTI Rating.
+
+L'open data est comme la Tour de Pise : un très bel édifice posé sur des fondations instables.
+]
+
+.pull-right[
+[![](https://datactivist.coop/aaf/img/rti.png)](https://www.rti-rating.org/country-data/)
+]
+
+---
+### Les conditions d'exercice du droit d'accès
+
+.red[ Une définition très large des documents administratifs]
+> Les documents administratifs peuvent revêtir de nombreuses formes (dossiers, rapports, études, comptes rendus, procès-verbaux, statistiques, directives, instructions, circulaires, codes sources, etc.) et adopter tout support (écrit, enregistrement sonore ou visuel, forme numérique ou informatique). 
+
+Le droit d'accès s'appplique aux documents administratifs produits dans le cadre d'une .red[mission de service public] ie :
+> Une mission d'intérêt général sous le contrôle de l'administration et qui est dotée à cette fin de prérogatives de puissance publique est chargée de l'exécution d'un service public. 
+
+Il ne s’exerce que si l’administration a effectivement en sa possession le document demandé, que si le document est formellement **achevé**, qu'il existe et qu'il n'est pas **préparatoire à une décision administrative** en cours. 
+
+---
+### Les exclusions au droit d'accès
+
+Le droit d'accès .red[**ne doit pas porter atteinte aux secrets protégés**] : 
+- le fonctionnement de l'État : délibérations du Gouvernement, secret de la défense nationale, la conduite de la politique extérieure de la France, la sûreté de l'État…
+- la protection de la vie privée
+- le secret médical
+- le secret des affaires (secret des procédés, des informations économiques et financières et
+des stratégies commerciales ou industrielle)
+- les mentions portant une appréciation ou un jugement de valeur sur une personne physique ou
+faisant apparaître un comportement d'une personne pouvant lui porter préjudice…
+
+Le document ne peut être publié qu'après avoir fait l'objet d'un traitement permettant
+d'.red[**occulter les mentions protégées**]. L’administration n’est pas tenue de publier un document lorsque “les travaux d’occultation dénatureraient ou videraient de sens le document” ou si “le document est indivisible ou l’occultation est trop complexe”.
+---
+### Le cas des données personnelles
+
+La prohibition de la communication à des tiers ne porte pas sur les données personnelles en général, mais .red[**sur les données à caractère personnel relevant de la vie privée**] des personnes concernées (âge, coordonnées personnelles, situation patrimoniale et financière, sympathies politiques, les croyances religieuses…)
+
+La mise en ligne de données à caractère personnel sans anonymisation n'est permise que dans .red[**trois cas**] :
+1. une disposition législative contraire le prévoit (exemple : [Transparence Santé](https://www.data.gouv.fr/fr/datasets/transparence-sante-1/))
+2. si les personnes intéressées ont donné leur accord (consentement au sens de l’article 4 du RGPD)
+3. les documents relevant de [l’article D312-3-1 du CRPA](https://www.legifrance.gouv.fr/affichTexte.do;jsessionid=51E99AF738C12521572D6A7F6C8C03E8.tplgfr23s_1?cidTexte=JORFTEXT000037797147&dateTexte=&oldAction=rechJO&categorieLien=id&idJO=JORFCONT000037796937)
+
+
+Hors de ces cas, il faut .red[**[anonymiser les données](https://github.com/SGMAP-AGD/anonymisation/wiki/Guide-de-l'anonymisation)**] : elles ne doivent plus se référer à une personne réelle (exit les noms, identifiants…) et ne doivent plus être spécifiques à un individu mais communes à un ensemble de personnes. L’indexation de ces données par un moteur de recherche externe est proscrite.
+
+
+---
+
+### Loi pour une République Numérique : l'ouverture des données par défaut
+
+<img style="float: right;margin:10px" src="https://datactivist.coop/aaf/img/repnum.jpg">
+Promulguée le 7 octobre 2016, après 4 ans d'annonces et de consultation, le titre 1 de la [loi pour une République  Numérique](https://www.legifrance.gouv.fr/affichTexte.do;jsessionid=B5632993E54F7CCC2606664B64CDF612.tpdila11v_1?cidTexte=JORFTEXT000033202746&categorieLien=id) porte sur l'ouverture des données publiques. 
+
+La loi impose un principe d'.red[**ouverture des données par principe**] qui ne fait pas l'objet de sanctions à toutes les administrations, les entreprises délégataires d'une mission de service public et les .red[**collectivités locales de plus de 3500 habitants et 50 agents**]. 
+
+L'ouverture concerne un .red[**périmètre très large**] : 
+* les documents communiqués suite à des demandes CADA
+* les "bases de données"
+* les données "dont la publication présente un intérêt économique, social, sanitaire ou environnemental".
+Rares sont donc les données publiques qui ne sont pas concernées par cette obligation d'ouverture. 
+
+---
+
+### La définition des données
+
+Le guide CADA-CNIL rappelle la **définition des "bases de données"**
+
+> On entend par base de données un recueil d'œuvres, de données ou d'autres éléments indépendants, disposés de manière systématique ou méthodique, et individuellement accessibles par des moyens électroniques ou par tout autre moyen (art L112-3 du code de la propriété intellectuelle)
+
+> En d’autres termes il s’agit d’un ensemble de données organisé en vue de son utilisation par des programmes correspondant à des applications distinctes et de manière à faciliter l'évolution indépendante des données et des programmes (en anglais : data base)
+
+Le document donne également une **définition de ce qu'est une "donnée"** :
+
+> Une donnée correspond à la représentation d'une information sous une forme conventionnelle destinée à faciliter son traitement (en anglais : data).
+
+---
+### Loi pour une République numérique : l'utilisation de standards ouverts
+<img style="float:right; margin:10px"  src="https://datactivist.coop/aaf/img/openstand.png">
+
+Afin de faciliter la réutilisation des données par les machines, la loi pour une République Numérique consacre **l'utilisation de standards ouverts** pour la communication des documents administratifs. 
+
+L’administration est dorénavant tenue, lorsqu’elle communique un document administratif au format électronique, de le mettre à disposition du citoyen **"dans un standard ouvert, aisément réutilisable et exploitable par un système de traitement automatisé"**. 
+
+Concrètement, cela devrait empêcher la publication de fichiers PDF là où un fichier CSV pourrait être diffusé.
+
+---
+### Loi pour une République numérique : une limitation des licences
+
+.reduite.center[
+[![](https://datactivist.coop/aaf/img/licences.png)](http://www.opendatalab.fr/index.php/laboratoire/le-kit-collectivites)
+]
+.footnote[source : [SGAR Occitanie](http://www.opendatalab.fr/index.php/laboratoire/le-kit-collectivites)]
+
+---
+class:inverse,middle,center
+
+# Focus sur le RGPD
+
+---
+
+### Répondre à la faiblesse du cadre juridique existant
+
+.center.reduite2[
+![](https://cdn2.nextinpact.com/images/bd/news/medium-167383.png)
+]
+---
+### Le RGPD ? 
+
+**Réglement Général de Protection des Données** : adopté à la mi-avril 2016 après 4 années de débat, il va considérablement renforcer le droit européen de protection des données personelles
+
+3 objectifs : 
+- Renforcer les droits des personnes
+
+- Responsabiliser les acteurs traitant des données personnelles
+
+- Crédibiliser la régulation
+
+Le RGPD propose un **cadre unifié pour l'ensemble de l'UE** qui s'applique à chaque fois qu'un résident européen est visé par un traitement de données personnelles. 
+
+---
+### Renforcer les droits des personnes
+.pull-left[
+
+![](https://www.cnil.fr/sites/default/files/styles/contenu_generique_push_2_colonnes/public/thumbnails/image/portabilite.gif?itok=Hw44RwAk)
+**Droit à la portabilité des données** : Droit de recevoir ses données "dans un format structuré, couramment utilisé et lisible par machine" et de les transmettre à un autre service si possible de matière automatisée
+]
+.pull-right[
+![](https://www.cnil.fr/sites/default/files/styles/contenu_generique_push_2_colonnes/public/thumbnails/image/transparence_0.gif?itok=__ElfCYA)
+**Transparence et consentement explicite** : plus de lisibilité sur ce qui est fait de mes données (preuve de consentement explicite dans des termes clairs) et j’exerce mes droits plus facilement (droit d’accès, droit de rectification, droit à l'oubli).
+]
+.footnote[Source : [CNIL](https://www.cnil.fr/fr/plus-de-droits-pour-vos-donnees)]
+
+---
+
+### Exemple de demande de consentement explicite
+
+.center.reduite2[
+![](https://datactivist.coop/dataliteracy/img/soge.jpeg)
+]
+---
+### Renforcer les droits des personnes
+.pull-left[
+![](https://www.cnil.fr/sites/default/files/styles/contenu_generique_push_2_colonnes/public/thumbnails/image/protection-mineur.gif?itok=eKkC1eTx)
+**Protection des mineurs** : Les services en ligne doivent obtenir le consentement des parents des mineurs de moins de 16 ans avant leur inscription.
+
+]
+.pull-right[
+![](https://www.cnil.fr/sites/default/files/styles/contenu_generique_push_2_colonnes/public/thumbnails/image/guichet-unique.gif?itok=_LRvPqGJ)
+**Guichet unique** : En cas de problème, je m’adresse à l’autorité de protection des données de mon pays, quelque soit le lieu d’implantation de l’entreprise qui traite mes données.
+]
+.footnote[Source : [CNIL](https://www.cnil.fr/fr/plus-de-droits-pour-vos-donnees)]
+
+---
+### Renforcer les droits des personnes
+.pull-left[
+![](https://www.cnil.fr/sites/default/files/styles/contenu_generique_push_2_colonnes/public/thumbnails/image/sanction.gif?itok=zJEPHJLr)
+**Sanctions renforcées** : En cas de violation de mes droits, l’entreprise responsable encourt une sanction pouvant s’élever à 4% de son chiffre d’affaires mondial.
+
+]
+.pull-right[
+![](https://www.cnil.fr/sites/default/files/styles/contenu_generique_push_2_colonnes/public/thumbnails/image/droit-oubli.gif?itok=eLolCmSf)
+**Droit à l'oubli** : Je peux demander à ce qu’un lien soit déréférencé d’un moteur de recherche ou qu’une information soit supprimée s’ils portent atteinte à ma vie privée.
+]
+.footnote[Source : [CNIL](https://www.cnil.fr/fr/plus-de-droits-pour-vos-donnees)]
+---
+
+### Responsabiliser les acteurs traitant des données personnelles
+.pull-left[
+Principes : 
+
+- **Privacy by design** : protection des données personnelles dès la conception du produit et par défaut
+- **Minimisation** : limiter la quantité de données personnelles dès le départ
+- **Accountability** : mettre en place des mesures de protection des données et démontrer cette conformité à tout moment
+- **Fin des obligations déclaratives** sauf si risque accru pour la vie privée
+]
+.pull-right[
+![](img/rgpd.png)
+]
+
+---
+
+### Les 6 étapes de la mise en conformité
+.pull-left[
+![](https://www.cnil.fr/sites/default/files/styles/contenu-generique-visuel/public/thumbnails/image/rgpd-etape6.png)
+]
+
+.pull-right[
+1. **Désigner un pilote** : Délégué à la Protection des Données (Data Protection Officer) exerce une mission d’information, de conseil et de contrôle en interne. 
+2. **Cartographier** : élaboration d'un registre des traitements des données personelles
+3. **Prioriser** : sur la base du registre, identifiez les actions à mener en priorité pour se conformer aux obligations actuelles et à venir. 
+]
+.footnote[ℹ DPO obligatoire uniquement pour secteur public et entreprises dont le traitement de données sensibles à grande échelle est une activité principale. ]
+---
+
+### Les 6 étapes de la mise en conformité
+
+.pull-left[
+4.**Gérer les risques** : Si identification de risques élevés, mener pour chaque traitement concerné une analyse d'impact sur la protection des données (PIA). 
+
+5.**S'organiser** : mise en place de procédures pour l’ensemble des événements qui peuvent survenir au cours de la vie d’un traitement (ex : faille de sécurité, demande de rectification, changement de prestataire…)
+
+6.**Documenter** :  prouver votre conformité au règlement, constituer et regrouper la documentation nécessaire qui doit être réexaminée régulièrement.  
+]
+
+.pull-right[
+
+.middle[![](https://www.cnil.fr/sites/default/files/styles/contenu-generique-visuel/public/thumbnails/image/rgpd-etape6.png)]
+
+]
+---
+
+### Crédibiliser la régulation
+
+⚖️ Les autorités de protection peuvent notamment : limiter temporairement ou définitivement un traitement, suspendre les flux de données, ordonner la rectification, la limitation ou l'effacement des données…
+
+🔫 Amendes : jusqu'à 10 ou 20 millions d’euros, ou, dans le cas d’une entreprise, de **2% jusqu’à 4% du  chiffre d'affaires annuel mondial**, le montant le plus élevé étant retenu.
+
+🇪🇺
+Sanction sera **conjointement adoptée entre l’ensemble des autorités concernées**, donc potentiellement pour le territoire de toute l’Union européenne.
+
+---
+
+class: inverse, center, middle
+
+# Merci !
+
+Contact : [samgoeta@hey.com](mailto:samgoeta@hey.com)
