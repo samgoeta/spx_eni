@@ -308,6 +308,11 @@ Principes :
 ]
 
 ---
+### Les 6 bases légales du traitement de données à caractère personnel 
+
+![](https://www.cnil.fr/sites/default/files/styles/contenu-generique-visuel/public/thumbnails/image/base-legales-generalites_975x500.png?itok=W7gU003W)
+
+---
 
 ### Les 6 étapes de la mise en conformité
 .pull-left[

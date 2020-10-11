@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <title>Bonnes pratiques, pièges et écueils de la visualisation de données</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Samuel Goëta, Sciences Po Aix" />
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/datactivist.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/datactivist-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Bonnes pratiques, pièges et écueils de la visualisation de données
+## Enjeux numériques de l’information
+### Samuel Goëta, Sciences Po Aix
+
+---
+
+
+layout: true
+  
+
+&lt;div class='my-footer'&gt;&lt;span&gt;Ethique des données, cadre juridique de la protection des données personnelles&lt;/span&gt; &lt;center&gt;&lt;div class=logo&gt;&lt;img src='' width='100px'&gt;&lt;/center&gt;&lt;/span&gt;&lt;/div&gt; 
+
+---
+
+class: center, middle
+
+Ces slides en ligne : https://samgoeta.github.io/spx_eni/3.html
+
+Sources : https://github.com/samgoeta/spx_eni/
+
+
+Ce cours reprend en partie des productions de Datactivist qui sont librement réutilisables selon les termes de la licence [Creative Commons 4.0 BY-SA](https://creativecommons.org/licenses/by-sa/4.0/legalcode.fr).
+
+&lt;BR&gt;
+&lt;BR&gt;
+
+.center[&lt;img src="./img/ccbysa.png" height="100"/&gt;] 
+
+
+---
+
+### Commençons par un exercice de visualisation
+
+Selon l'Organisation internationale des migrations, 3108 migrant·e·s ont trouvé la mort ou disparu durant le premier semestre 2017.
+
+--
+- 2259 en Méditerranée
+- 225 en Afrique du Nord ;
+- 148 à la frontière américano-mexicaine ;
+- 136 en Afrique subsaharienne ;
+- 103 dans la Corne de l'Afrique ;
+- 91 dans les Caraïbes ;
+- 45 en Asie du Sud-Est ;
+- 34 en Amérique centrale ;
+- 33 en Europe ;
+- 31 au Moyen-Orient ;
+- un·e en Amérique du Nord ;
+- un·e en Asie du Sud ;
+- un·e en Asie de l'Est.
+
+---
+
+### Une autre visualisation
+
+.center[![](https://datactivist.coop/datavizchallenge/1/img/Migrants_Guardian1.png)]
+
+.footnote[*Source* : [The Guardian, 11/09/2017](https://www.theguardian.com/world/2017/sep/11/migrant-death-toll-rises-after-clampdown-on-east-european-borders)].
+---
+
+### Que s'est-il passé ?
+
+- Notre cerveau a tenté de se .red[**représenter**] les données qui nous étaient fournies. Il a utilisé ses capacités *d'imagination*.
+
+--
+
+- La carte propose une .red[**représentation**] visuelle des mêmes données.
+
+--
+
+- Cette représentation s'avère cependant plus fidèle, plus lisible et plus éloquente. Elle fait le travail qu'a tenté d'accomplir notre cerveau mais en y ajoutant des précisions, une clarté et un message hors de sa capacité de traitement.
+
+--
+
+- La datavisualisation agit donc comme un .red[**outil cognitif**] pour nous aider à comprendre les données.
+
+--
+
+- C'est qu' *Alberto Cairo* nomme la .red[**valeur fonctionnelle**]&lt;sup&gt;1&lt;/sup&gt; de la datavisualisation.
+
+
+.footnote[[1] Cf. *The functional Art*, 2012, Alberto Cairo ;
+*The truthful art*, 2016, Alberto Cairo.
+Toutes les références [sur son site](http://www.thefunctionalart.com/)].
+
+---
+### Encodage / Décodage
+
+- La visualisation de la donnée consiste en un .red[**encodage**], c'est-à-dire une "conversion" d'un format à un autre.
+
+--
+
+- En l'occurence, le passage d'une forme brute non interprétée (les *data*), à une forme raffinée interprétée (la *dataviz*).
+
+--
+- Dans son usage journalistique, la mise en forme implique également un **angle**, autrement dit le *message* dont l'image doit être le vecteur.
+
+--
+
+- Nous avons donc trois éléments constitutifs de la démarche :
+1. des données ;
+2. une mise en forme ;
+3. un message
+
+---
+### Trois qualités d'une dataviz
+
+.center.reduite[![](venn_dataviz.png)]
+
+---
+class: inverse, center, middle
+
+# Premier objectif :
+# la rigueur
+
+---
+### Comprendre la nature et le sens des données
+
+- La dataviz étant un encodage, elle substitue aux données des équivalences visuelles.
+
+- L'encodage doit permettre :
+1. de comprendre **la nature** des données ;
+2. d'apprécier **le rapport** qu'elles entretiennent entre elles ;
+3. de saisir les points saillants et **phénomènes** clefs ;
+4. le tout sans déperdition de sens.
+
+- Chacun de ces aspects repose sur des caractéristiques visuelles liées à des représentations.
+
+---
+
+### Expliciter la nature de la donnée
+
+.pull-left[![](https://datactivist.coop/datavizchallenge/1/img/BlackBoys_NYT.png)
+([source](https://www.nytimes.com/interactive/2018/03/19/upshot/race-class-white-and-black-men.html))]
+
+.pull-right[L'encodage doit permettre de saisir immédiatement le sens de chaque élément : 
+* où sont les points de données ? 
+* Que représentent-ils individuellement / collectivement ?
+
+.footnote[La dataviz explicite ici le phénomène lui-même. Il s'agit du point de départ de la démarche journalistique. Les causes, elles, sont explorées et détaillées dans le texte. &lt;/small&gt;*]
+]
+---
+
+### Eviter de fausser la représentation
+
+Un mauvais choix graphique peut fausser la représentation de la donnée en ne donnant pas à constater le phénomène qu'elles permettent de décrire.
+
+.pull-left[![](https://datactivist.coop/datavizchallenge/1/img/NetworkAnalysis_metal.jpg)
+([source](http://www.geologyin.com/2015/11/network-analysis-shows-systemic-risk-in.html))]
+
+.pull-right[![](https://datactivist.coop/datavizchallenge/1/img/NetworkAnalysis_Trade.png)
+([source](http://www.visualcapitalist.com/interactive-mapping-flow-international-trade/))
+]
+
+
+
+---
+
+### Choisir le bon niveau de granularité
+
+Le niveau de précision minimale d'une donnée (aussi appelé **.red[granularité]**) peut modifier de façon radicale la lecture d'une phénomènne.
+Dans le cas d'une carte, le choix de l'échelle peut mener à la généralisation de phénomène extrêmement circonscrits (ou inversement) comme le montre cet[excellent exemple sur le blog de Datawrapper](https://blog.datawrapper.de/weekly-chart-europegrowth/)
+
+.pull-left[
+![](https://datactivist.coop/datavizchallenge/1/img/Scale1.png)
+]
+
+--
+
+.pull-right[
+![](https://datactivist.coop/datavizchallenge/1/img/Scale2.png)
+]
+
+---
+
+### Où est mon zéro ?
+
+Le choix de l'échelle est aussi celui de son étendue. Il peut être tentant pour amplifier un phénomène d'en augmenter l'amplitude artificiellement en réduisant l'échelle.
+L'exemple le plus courant est le "data-does-not-start-at-zero". Si ce choix peut se justifier, il est bien souvent utilisé comme méthode de manipulation.
+
+.pull-left[![](https://datactivist.coop/datavizchallenge/1/img/Hortefeux.jpg)]
+.pull-right[![](https://datactivist.coop/datavizchallenge/1/img/Delinquence.jpg)]
+
+
+.footnote[
+([source](http://owni.fr/2011/10/05/2011/01/25/plus-la-delinquance-baisse-plus-la-violence-augmente/index.html))
+]
+
+---
+### Où est mon zéro ? 
+
+[![](https://datactivist.coop/datavizchallenge/1/img/chiffres.png)](https://www.lemonde.fr/les-decodeurs/video/2017/05/11/tousfactcheckeurs-chiffres-trompeurs_5126301_4355770.html)
+
+
+---
+### Où est mon zéro ? 
+
+- Avoir une **.red[échelle discontinue sur les histogrammes]** : il est fréquent de trouver des histogrammes dont l'axe des ordonnées ne démarre pas à 0. Cela a pour conséquence de "tronquer" une partie du graphique et de donner une **présentation biaisée des données**.
+Cela est souvent réalisé consciemment pour faire passer un message
+  - Exemple avec [le communiqué de presse de la SNCF](https://www.sncf.com/sncv1/ressources/cp_taux_de_participation_4_avril_2018.pdf) durant la grève des cheminots (avril 2018) sur le taux de grévistes :
+  
+.center[&lt;img src="https://datactivist.coop/SPoSGL/sections/img/greve.png" height="220"/&gt;]
+
+---
+### Où est mon zéro ? 
+
+Voici ce que donne le même graphique mais avec l'axe des ordonnées démarrant à 0 :
+
+.pull-left[&lt;img src="https://datactivist.coop/SPoSGL/sections/img//greve2.png" height="350"/&gt;]
+
+.pull-right[*Pas le même rendu, n'est-ce pas ? ;)*]
+
+  &lt;BR&gt;&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;
+
+.pull-right[*NB: de nombreux exemples cités dans cette partie proviennent de [cet article des Décodeurs*](https://abonnes.lemonde.fr/les-decodeurs/article/2018/05/22/sept-conseils-pour-ne-pas-se-faire-avoir-par-les-representations-graphiques_5302680_4355770.html) du Monde]
+
+---
+
+### Où est mon zéro ?
+
+- Les **.red[graphiques avec une "Base 100"]** : en fonction de l'année sélectionnée pour être la base 100, les évolutions peuvent fortement changer
+  
+.pull-left[&lt;img src="https://datactivist.coop/SPoSGL/sections/img/indus1.png" height="300"/&gt;
+Production industrielle en Europe, base 100 = **2010**]
+
+.pull-right[&lt;img src="https://datactivist.coop/SPoSGL/sections/img/indus2.png" height="300"/&gt;
+Production industrielle en Europe, base 100 = **1974**]
+
+---
+
+### Eviter de semer la confusion
+
+&lt;iframe width="760" height="485" src="https://www.youtube.com/embed/O-3Mlj3MQ_Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+
+---
+### Médiane ou Moyenne ?
+
+- Salaire mensuel **.red[moyen]** net en France en 2014 (secteur privé) : **2 225€**
+
+--
+
+- Salaire mensuel **.red[median]** net en France en 2014 (secteur privé) : **1 783€**
+Soit une différence de près de 450€ !
+
+--
+
+.center[[&lt;img src="https://datactivist.coop/SPoSGL/sections/img/salaireinsee.png" height="370"/&gt;](https://www.insee.fr/fr/statistiques/2121609#consulter)]
+
+---
+### Médiane ou Moyenne ?
+
+Rappelez-vous que **la moyenne est très sensible aux .red[valeurs extrêmes]...**
+
+.center[[&lt;img src="https://datactivist.coop/SPoSGL/sections/img/milliardaire.png" height="400"/&gt;](https://www.insee.fr/fr/statistiques/2121609#consulter)]
+
+---
+### Le périmètre du dénominateur
+
+Lorsqu'il est question de **.red[ratio]**, il est utile de se demander ce que comprend le dénominateur de ce ratio. Le périmètre du dénominateur influence évidemment le résultat obtenu. 
+
+- Exemple avec le taux de chômage des jeunes en France : à la fin 2017, le taux de chômage des 15-24 ans atteignait 23%
+
+- Est-ce que cela signifie que près d'un jeune sur 4 est au chômage ?
+
+.center[&lt;img src="https://datactivist.coop/SPoSGL/sections/img/chomage1.png" height="150"/&gt;]
+
+.footnote[[Source](https://www.huffingtonpost.fr/2012/09/06/taux-chomage-bit-jeunes-dom_n_1860232.html)]
+
+---
+### Le périmètre du dénominateur
+
+- Est-ce que cela signifie que près d'un jeune sur 4 est au chômage ?
+
+- Non ! Le dénominateur prend en compte les **"personnes actives"**, c'est-à-dire ayant un emploi ou à la recherche d'un emploi
+
+- Mais **seulement 37% des 15-24 ans sont actifs** ! Beaucoup des autres sont encore en études secondaires ou tertiaires 
+
+- Et ceux qui sont déjà sur le marché du travail sont souvent ceux qui ont quitté tôt le système scolaire et donc **plus susceptible d'éprouver des difficultés pour trouver un travail**
+
+- Si on rapporte le nombre de 15-24 ans à la recherche d'un emploi sur l'ensemble des 15-24 ans (y compris ceux en études), le taux de chômage tombe à 8,5%, soit près d'un jeune sur 12
+
+.footnote[Regarder la vidéo ["Un jeune sur quatre au chômage ?"](https://education.francetv.fr/matiere/economie/premiere/video/un-jeune-sur-quatre-au-chomage)]
+
+
+---
+class: inverse, center, middle
+
+# Deuxième objectif :
+# la lisibilité
+
+---
+
+### Une question d'arbitrage
+
+L'allegorie de la carte parfaite "à l'échelle 1:1" de Borgès donne une bonne idée du problème :
+
+.pull-left[
+*En cet empire, l'Art de la Cartographie fut poussé à une telle Perfection que la Carte d'une seule Province occupait toute une ville et la Carte de l'Empire toute une Province. Avec le temps, ces Cartes Démesurées cessèrent de donner satisfaction et les Collèges de Cartographes levèrent une Carte de l'Empire, qui avait le Format de l'Empire et qui coïncidait avec lui, point par point.*
+]
+.pull-right[
+![](https://datactivist.coop/datavizchallenge/1/img/BorgesAleph.jpg)
+]
+---
+
+### 1er risque : "l'overplotting"
+
+En statistique, le terme "overplotting" se réfère à l'effet produit par l'intégration d'un trop grand nombre de points de données dans un graph le rendant illisible.
+
+*Note : c'est un vrai terme de stat, vous pouvez l'utiliser pour vous la péter.*
+
+--
+
+Exemple : une heat-map qui ne sert à rien ([source](https://twitter.com/i/web/status/1009836270376366081))
+
+![](https://datactivist.coop/datavizchallenge/1/img/Heatmap_2.png)
+
+---
+
+### 2è risque : "l'overcomplicated"
+
+L'autre risque courant est de multiplier les dimensions et axes de lecture jusqu'à rendre le graphique incompréhensible.
+
+--
+
+*Note : ce terme n'a rien d'officiel, ne l'utilisez pas pour vous la péter.*
+
+--
+
+.center[Ex. : **démerdez-vous avec ça !**]
+
+.center[![](https://datactivist.coop/datavizchallenge/1/img/OverComplicated3.jpg)]
+
+---
+
+### 3è risque : l'excès d'esthétisme
+
+La tentation de mêler précision et esthétique peut produire de très beaux graphs... trop compliqués pour être compris du premier coup.
+
+--
+
+Ex. : un super papier, un très beau visuel mais un concept tordu ([source](https://pegasusdata.com/2012/11/25/opendata-copinage-au-gouvernement-quand-lanalyse-de-reseau-vient-en-aide-au-journalisme-dinvestigation/))
+
+.reduite[![](https://datactivist.coop/datavizchallenge/1/img/NebuleusePublicPrive.png)]
+
+
+---
+
+### Laissez parler les données
+
+Les fioritures peuvent constituer des distractions : quand les données sont claires, autant leur laisser le champs libre.
+
+.pull-left[![](https://datactivist.coop/datavizchallenge/1/img/Simplicite1.png)]
+.pull-right[![](https://datactivist.coop/datavizchallenge/1/img/Simplicite2.png)]
+
+.footnote[
+([source](https://www.tableau.com/about/blog/2016/5/5-tips-effective-visual-data-communication-54174))
+]
+
+---
+
+### Sans message, l'image devient vaine
+
+Il peut arriver que la dataviz n'ait d'intention que décorative ou spectaculaire. Précise et lisible, elle devient un panneau vide de sens et de propos qui n'explicite rien du monde faute de choisir comment parler de son sujet.
+
+--
+
+.pull-left[
+Ex. : une "visualisation concrète de la dette française" qui n'a aucun sens ([source](http://www.slate.fr/story/92749/dette-publique-francaise-stade-de-france))
+]
+.pull-right[
+![](https://datactivist.coop/datavizchallenge/1/img/Slate_Dette.png)
+]
+
+---
+class: inverse, center, middle
+
+# Troisième objectif :
+# l'éloquence
+
+---
+
+### Les points de repère
+
+La façon la plus simple de mettre en avant un message reste encore de l'expliciter : souligner des points saillants ou relever les infos clefs permet de guider dans la lecture.
+
+--
+
+Ex. : Paris Match veille toujours à semer des focus ou à donner des clefs de lecture pour comprendre sa rubrique DataMatch ([source](https://askmedia.fr/blog/ask-media-pour-paris-match-ya-t-il-trop-daeroports-en-france/))
+
+![](https://datactivist.coop/datavizchallenge/1/img/AeroportDataMatch.png)
+
+---
+
+### La symbolique comme message
+
+Le choix d'une représentation figurative allégorique plutôt que littérale peut constituer en soi l'angle d'une dataviz. Claire et bien choisie, la référence agit alors comme un sous-texte à l'image.
+
+--
+
+*Je vous ai gardé une pleine page pour la suivante parce que je la trouve très belle dans le fond comme dans la forme.*
+
+---
+
+Ex. : en botanique, les cernes ou anneaux de croissance désignent les cercles concentriques de la section d'un tronc d'arbre. Elles permettent de suivre l'évolution de l'arbre saison après saison ([source](https://twitter.com/i/web/status/1010012782253826048))
+
+![](https://datactivist.coop/datavizchallenge/1/img/ImmigrationTree.jpeg)
+
+---
+
+### Permettre l'exploration
+
+Beaucoup d'informations visuelles précises et bien organisées peuvent aussi permettre l'exploration.
+
+Ex. : ce diagramme de Sankey sur l'invention des neurosciences réalisé par Moritz Stefaner pour Wired laisse découvrir l'émergence d'une nouvelle discipline ([source](http://well-formed-data.net/archives/331/neuroscience-infoporn))
+
+![](https://datactivist.coop/datavizchallenge/1/img/Neuroscience_Sankey.png)
+
+---
+### Aparté : d'autres sens parlent
+Le message peut aussi passer par d'autres sens que la vue.
+L'ouïe peut être mobilisé. Ou, comme ici pour The Guardian, le toucher : mis "en relief", la liste des réfugié·e·s mort·e·s en tentant de rejoindre l'Europe frappe l'esprit avec une force renouvelée.
+
+![](https://datactivist.coop/datavizchallenge/1//img/Migrants_Guardian2.png)
+
+
+---
+
+class: inverse, center, middle
+
+# Merci !
+
+Contact : [samgoeta@hey.com](mailto:samgoeta@hey.com)
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();</script>
+
+<script>
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

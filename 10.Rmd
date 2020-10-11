@@ -1,4 +1,106 @@
+---
+## La loi de Goodhart
 
+La **.red[loi de Goodhart]** est un concept qui met en lumière la difficulté de concevoir et mesurer des indicateurs fiables qui sont associés à des enjeux politiques, financiers ou sociaux. Ainsi, **lorsqu'une mesure devient un objectif, elle cesse d'être une bonne mesure**
+
+> Tout indicateur statistique cesse d’être un indicateur statistique fiable dès lors qu’il fait l’objet d’enjeux car il devient sujet à des manipulations
+Charles Goodhart, économiste
+
+**Connaissez-vous des exemples d'indicateurs où la loi de Goodhart peut être observée ?**
+
+Le taux de chômage ! On se concentre la plupart du temps sur **le nombre d'inscrits en catégorie A** (et ce sont ces chiffres qui font les gros titres de la presse généralement).
+Mais est-ce bien pertinent ?
+
+---
+## La loi de Goodhart
+
+Exemple : le taux de chômage
+
+- En fonction de la catégorie à laquelle on s'intéresse, le taux de chômage peut prendre des directions très différentes... Ici focus **catégorie A**
+
+.center[<img src="./img/cat1.png" height="350"/>]
+
+---
+## La loi de Goodhart
+
+Exemple : le taux de chômage
+
+- En fonction de la catégorie à laquelle on s'intéresse, le taux de chômage peut prendre des directions très différentes... Ici focus **catégorie A/B/C**
+
+.center[<img src="./img/cat2.png" height="350"/>]
+
+---
+## La loi de Goodhart
+
+Exemple : le taux de chômage
+
+- En fonction de la catégorie à laquelle on s'intéresse, le taux de chômage peut prendre des directions très différentes... Ici focus **catégorie A/B/C, moins de 25 ans**
+
+.center[<img src="./img/cat3.png" height="350"/>]
+
+---
+## La loi de Goodhart
+
+Exemple : le taux de chômage
+
+- En fonction de la catégorie à laquelle on s'intéresse, le taux de chômage peut prendre des directions très différentes... Ici focus **catégorie A/B/C, 50 ans ou plus**
+
+.center[<img src="./img/cat4.png" height="350"/>]
+
+---
+## La loi de Goodhart
+
+Exemple : le taux de chômage
+
+- Qu'en est-il du **.red[taux d'activité]** ? Les chiffres du chômage ne prennent pas en compte les personnes qui sont démotivées et ne recherchant pas ou plus de travail
+
+- **Il peut y avoir des situations où le taux de chômage baisse et le taux d'activité également**. Cela signifie qu'il y a moins de demandeurs d'emplois "officiels" mais de plus en plus de personnes en âge de travailler qui sont inactives 
+
+- C'est la situation que connaît les Etats-Unis : Entre 2009 et 2017, le taux de chômage est passé de 9,2% à 4,4% mais parallèlement le taux d'activité est passée de 70% à 67,5%
+
+---
+## La loi de Goodhart
+
+Exemple : le taux de chômage
+
+.center[<img src="./img/chomus1.png" height="380"/>]
+
+.footnote[Taux de chômage US entre 2009 et 2017]
+
+---
+## La loi de Goodhart
+
+Exemple : le taux de chômage
+
+.center[<img src="./img/chomus2.png" height="380"/>]
+
+.footnote[Taux d'activité US entre 2009 et 2017]
+
+---
+## La loi de Goodhart
+
+Exemple : le taux de chômage
+
+- Au-delà du chômage, qu'en est-il du **.red[halo autour du chômage]** ? Comprend le travail occasionnel, le sous-emploi ou les personnes inactives
+
+.center[<img src="./img/halo1.png" height="300"/>]
+
+Le taux de chômage (au sens du BIT) en France a plutôt eu tendance à baisser depuis 2015
+
+---
+## La loi de Goodhart
+
+Exemple : le taux de chômage
+
+- Au-delà du chômage, qu'en est-il du **.red[halo autour du chômage]** ? Comprend le travail occasionnel, le sous-emploi ou les personnes inactives
+
+.center[<img src="./img/halo2.png" height="300"/>]
+
+Alors que le Halo du chômage en France a lui fortement augmenté sur la même période..
+
+---
+
+https://www.youtube.com/watch?v=BoiJRKwiC1Y
 ---
 class:center, middle, inverse
 
@@ -50,6 +152,80 @@ L'équipe des Décodeurs du *Monde* a produit un [générateur de comparaisons a
 
 [![](./img/generateur.png)](https://www.lemonde.fr/les-decodeurs/article/2019/01/02/correlation-ou-causalite-brillez-en-societe-avec-notre-generateur-aleatoire-de-comparaisons-absurdes_5404286_4355770.html)
 ]
+
+---
+## Corrélation ou causalité ?
+
+Rappel : une corrélation fortement positive, avec un coefficient de corrélation (r) > 0,5, signifie seulement que deux variables évoluent dans le même sens. Cela ne dit **rien** sur le possible lien entre elles
+- Faites attention aux **corrélations fallacieuses** !
+- Exemple ici avec la corrélation quasi parfaite entre la consommation de fromage par personne et le nombre de personnes qui décèdent étranglées dans leurs draps
+
+.center[[<img src="./img/spurious.png" height="250"/>](http://tylervigen.com/spurious-correlations)]
+
+---
+## Corrélation ou causalité ?
+
+A l'instar du site parodique ["Spurious Correlations"](http://tylervigen.com/spurious-correlations) dont le graphique précédent est issu, les Décodeurs du monde ont récemment lancé un [générateur aléatoire de comparaisons](https://www.lemonde.fr/les-decodeurs/article/2019/01/02/correlation-ou-causalite-brillez-en-societe-avec-notre-generateur-aleatoire-de-comparaisons-absurdes_5404286_4355770.html). Un bon moyen pour ne plus jamais faire la confusion entre corrélation ou causalité !
+
+.center[<img src="./img/decodeurs.png" height="350"/>]
+
+---
+## Corrélation ou causalité ?
+
+- En ce qui concerne les corrélations, il faut être attentif au **.red[nombre d'unités observées]** : moins il y a d'observations, plus la corrélation est facilement élevée. Ce n'est pas pareil de regarder la corrélation entre 2 variables sur 13 régions ou sur 35 000 villes
+
+.center[<img src="./img/correlation.png" height="180"/>]
+
+- Il faut également être prudent sur l'échelle spatiale utilisée : la corrélation entre le % d'immigrants et le vote FN est positif à l'échelle du département. Mais à l'intérieur de ces départements, **ce sont dans les zones avec la plus faible proportion d'immigrants que les personnes votent FN**. Ainsi, au niveau micro la corrélation peut être inversée que ce qui était observé au niveau macro
+
+---
+## Corrélation ou causalité ?
+
+.center[<img src="./img/lebras.png" height="350"/>]
+
+.footnotes[Credits Hervé Le Bras]
+
+---
+## Corrélation ou causalité ?
+
+- Les zones combinant le plus de difficultés sont corrélées avec celles ayant une part des suffrages élevée pour Marine Le Pen à la présidentielle de 2012
+
+- Est-ce que cela signifie que les personnes qui ont le plus de difficultés votent FN ?
+  - Pas forcément, pourquoi ?
+  
+> Il serait cependant inexact d’en déduire que ce vote est celui des pauvres et des laissés pour compte. Ces derniers s’abstiennent le plus souvent. On doit plutôt constater que c’est le vote des régions pauvres, celles où beaucoup craignent les accidents de la vie car ils voient leurs proches atteints par eux.
+Hervé Le Bras, dans son article pour The Conversation ["La France inégale : Qui vote FN ? Pas forcément ceux à qui l’on pense"](https://theconversation.com/la-france-inegale-qui-vote-fn-pas-forcement-ceux-a-qui-lon-pense-75977) (**obligatoire**)
+
+---
+## Corrélation ou causalité ?
+
+<BR><BR><BR>
+.center[<img src="./img/causalite.png" height="200"/>]
+
+.footnotes[Credits XKCD]
+
+---
+## Les facteurs cachés
+
+Il existe des facteurs qu'on ne voit pas ou auxquels on ne pense généralement pas mais qui peuvent fortement influer sur des résultats.
+- Exemple ici avec la forte baisse du nombre de décès sur les routes en France entre 2003 et 2014
+
+.center[<img src="./img/routes.png" height="100"/>]
+
+- Est-ce que les politiques actives de lutte contre l'insécurité routière mises en place dans les années 2000 sont la seule explication de cette baisse ? D'autres facteurs "cachés" peuvent aussi avoir eu un rôle significatif
+
+---
+## Les facteurs cachés
+
+Quelques exemples :
+
+- Le **taux d'occupation des voitures** a fortement baissé (donc mécaniquement moins de morts  à accidents comparables)
+  
+- Les **conducteurs "novices"**, i.e avec moins de 12 années de pratique, sont de moins en moins nombreux
+
+- Les personnes blessées dans des accidents de la route sont **mieux pris en charge par les services d'urgence** que par le passé
+
+- La **qualité des voitures** s'est fortement améliorée, et notamment l'aspect sécurité (airbags)
 
 ---
 
