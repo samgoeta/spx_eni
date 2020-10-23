@@ -1,0 +1,39 @@
+---
+title: "airbnb"
+author: "Samuel Goëta"
+date: "10/18/2020"
+output: html_document
+---
+
+```{r}
+library(tidyverse)
+library(sf)
+library(geojsonsf)
+library(rgdal)
+
+```
+
+```{r}
+
+# import des données de l'observatoire airbnb pour aix
+airbnb <- read_csv("http://observatoire-airbnb.fr/download/1806/")
+
+# virer les géolocalisations vides
+airbnb <- airbnb %>% 
+  filter(!is.na(Latitude))
+
+# convertir en object géo
+airbnb_geo <- st_as_sf(airbnb, coords = c("Longitude", "Latitude"), crs = 4326) 
+
+#importer les données du cadastre téléchargées sur cadastre.data.gouv.fr
+  cadastre <- st_read(dsn = "cadastre-13001-sections.json") %>% 
+    select(-commune) 
+
+  # joindre les deux fichiers pour rajouter aux données airbnb la section cadastrale
+airbnb2019 <- st_join(airbnb_geo, cadastre) 
+
+# exporter en csv
+airbnb2019 %>% 
+    st_write(dsn = "airbnb_cadastre.csv", driver = "CSV")
+```
+
