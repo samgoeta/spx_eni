@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <title>La visualisation de données en pratique : fonctions, formats, outils</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Samuel Goëta, Sciences Po Aix" />
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/datactivist.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/datactivist-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# La visualisation de données en pratique : fonctions, formats, outils
+## Enjeux numériques de l’information
+### Samuel Goëta, Sciences Po Aix
+
+---
+
+
+layout: true
+  
+
+&lt;div class='my-footer'&gt;&lt;span&gt;La visualisation de données en pratique (fonctions, formats, outils)&lt;/span&gt; &lt;center&gt;&lt;div class=logo&gt;&lt;img src='' width='100px'&gt;&lt;/center&gt;&lt;/span&gt;&lt;/div&gt; 
+
+---
+
+class: center, middle
+
+Ces slides en ligne : https://samgoeta.github.io/spx_eni/5.html
+
+Sources : https://github.com/samgoeta/spx_eni/
+
+
+Ce cours reprend en partie des productions de Datactivist qui sont librement réutilisables selon les termes de la licence [Creative Commons 4.0 BY-SA](https://creativecommons.org/licenses/by-sa/4.0/legalcode.fr).
+
+&lt;BR&gt;
+&lt;BR&gt;
+
+.center[&lt;img src="./img/ccbysa.png" height="100"/&gt;] 
+
+
+---
+class: inverse, center, middle
+
+## Avant de commencer 
+
+# Un intermède musical
+
+---
+
+## "Observe, collect and draw"
+
+.pull-left[
+![](https://datactivist.coop/infolab_poitiers/datapero_datahumanism/img/observecollectdraw.jpg)
+]
+
+.pull-right[
+La méthode [Observe, collect and draw](http://giorgialupi.com/observe-collect-draw) découle directement de l'expérience *Dear data*.
+
+Elle consiste en trois sections, correspondant aux trois techniques clefs :
+1. apprendre à voir (les données, matériau de base) ;
+2. observer, collecter et dessiner ;
+3. élaborer son propre langage visuel.
+]
+
+---
+
+Suite à la sortie de cet ouvrage (et à l'invitation de ses autrices), des centaines de créations ont été partagées sur les réseaux sociaux ([notamment Instagram](https://www.instagram.com/explore/tags/deardata/)) via le hashtag #deardata. Une bonne source d'inspiration pour mettre le pied à l'étrier !
+
+![](https://datactivist.coop/infolab_poitiers/datapero_datahumanism/img/deardata_insta.png)
+
+---
+
+### Vérifications (façon Dear data)
+
+.pull-left[
+Ces questions n'appellent que des réponses "à plat" : une évaluation de un à dix de l'intensité d'un phénomène. Les causes de cette évaluation, ses effets, le ressenti en sont absents.
+
+Il s'agit dès lors de se poser les questions autrement pour collecter les données.
+
+![](https://datactivist.coop/infolab_poitiers/datapero_datahumanism/img/verifications_questions.png)
+]
+
+.pull-right[
+Une approche .red[Dear data] consisterait à **réinjecter de la subjectivité** pour faire de ces évaluations des restitutions plus fidèles et sensibles des réalités dont les données sont les vecteurs.
+
+**Interroger les causes** : plutôt que *"comment évaluez-vous votre assise ?"*, demander *"sur quoi êtes-vous assis·es ?"*, *"votre assise est-elle stable ?*"
+
+**Recueillir les conséquences** : plutôt que *"comment noteriez-vous la qualité de votre connexion WiFi ?"*, demander : *"comment l'image vous apparaît : claire, brouillée, pixellisée ?"*, *"avez-vous du changer de réseau ? Partager la connexion de votre mobile ?"*
+]
+
+---
+
+class: inverse
+
+background-image: url("https://datactivist.coop/infolab_poitiers/datapero_datahumanism/img/verifications_deardata.jpg")
+background-size: contain
+
+### Exemple : subjectivation du son
+
+
+---
+
+class: inverse
+
+### Exercice : la chanson ressentie
+
+![](https://datactivist.coop/infolab_poitiers/datapero_datahumanism/img/spaceoddity.jpg)
+
+
+---
+
+class: inverse, left, middle
+
+# Panorama des fonctions et des formats de data visualisation
+
+---
+
+## .red[Panorama de fonctions de visualisation]
+
+**Connaissez-vous le "Data Viz Project" ?**
+https://datavizproject.com/
+
+.pull-left[
+- Comparaison
+- Visualisation de concept
+- Corrélation
+- Distribution
+- Données géographiques
+- Une partie d'un ensemble
+- Changement de valeur dans le temps
+]
+
+
+.pull-right[
+.center[.reduite[![](https://datactivist.coop/dataweek/dataviz/img/DataVizProject_p1.png)]]
+]
+
+---
+## .red[Panorama de fonctions de visualisation]
+
+**Connaissez-vous le projet "From Data to Viz" ?** 
+https://www.data-to-viz.com
+
+
+.center[.reduite2[![](https://datactivist.coop/dataweek/dataviz/img/FromDatatoViz.PNG)]]
+
+---
+
+class: inverse, left, middle
+
+# Panorama des outils de data visualisation
+
+
+---
+### .red[Des outils en fonction des usages]
+.center[.reduite[![](https://datactivist.coop/dataweek/dataviz/img/Tous_les_outils.PNG)]]
+
+---
+### .red[RAWGraphs]
+.center[.reduite[![](https://datactivist.coop/dataweek/dataviz/img/RAWGraphs.PNG)]]
+#### .center[https://rawgraphs.io/]
+
+---
+### .red[Flourish]
+.center[.reduite[![](https://datactivist.coop/dataweek/dataviz/img/Flourish.PNG)]]
+#### .center[https://app.flourish.studio/templates]
+
+---
+### .red[Datawrapper]
+.center[.reduite[![](https://datactivist.coop/dataweek/dataviz/img/Datawrapper.PNG)]]
+#### .center[https://www.datawrapper.de/]
+
+---
+### .red[HighCharts]
+.center[.reduite[![](https://datactivist.coop/dataweek/dataviz/img/HighCharts.PNG)]]
+#### .center[https://www.highcharts.com/demo]
+
+---
+### .red[Tableau public]
+.center[.reduite[![](https://datactivist.coop/dataweek/dataviz/img/Tableau.PNG)]]
+#### .center[https://public.tableau.com/fr-fr/s/]
+
+---
+### .red[Khartis]
+.center[.reduite[![](https://datactivist.coop/dataweek/dataviz/img/Khartis.PNG)]]
+#### .center[http://www.sciencespo.fr/cartographie/khartis/]
+
+
+---
+### .red[macarte.ign]
+.center[.reduite[![](https://datactivist.coop/dataweek/dataviz/img/IGN.PNG)]]
+#### .center[https://macarte.ign.fr]
+
+---
+class: inverse, left, middle
+
+# Ateliers pour réaliser facilement des data visualisation
+
+
+---
+### .red[Le diagramme à barre]
+
+.pull-left[
+- **Pour** :  des données avec différentes catégories ou dénominations
+
+
+
+- **Avantages** : simple à créer et à comprendre
+
+
+
+- **Règles** :
+  1. Ne pas surcharger
+  2. Nommer systématiquement les axes
+  3. Commencer vos axes à 0 (quand il s'agit de données quantifiables)
+]
+&lt;Br&gt;
+&lt;Br&gt;
+.pull-right[.reduite[![](https://datactivist.coop/dataweek/dataviz/img/diagramme_barre.png)]]
+
+
+
+---
+### Atelier sur les résultats des élections présidentielles de 2017
+
+.pull-left[
+- Allez sur http://www.interieur.gouv.fr/Elections/Les-resultats/Presidentielles
+
+- Choisissez votre département sur la carte
+
+- Sélectionner et copiez le tableau avec l'ensemble des candidats du 1er tour.
+]
+
+
+.pull-right[
+.reduite[![](https://datactivist.coop/dataweek/dataviz/img/choix_dep.PNG)]
+.reduite[![](https://datactivist.coop/dataweek/dataviz/img/1er_tour.PNG)]
+]
+
+
+---
+### Atelier sur les résultats des élections présidentielles de 2017
+
+.pull-left[
+- Allez sur www.datawrapper.de et cliquez sur "**create a chart**"
+
+- Coller les données copiez précédemment (tableau des résultats du 1er tour des élections)
+
+- Cliquez sur "**Proceed**"
+
+- Cliquez sur "**add a column**"
+
+- Nommer la nouvelle colonne et remplissez les cellules de la nouvelle colonne
+
+- Cliquez sur "**Proceed**"
+
+]
+.pull-right[
+.reduite[![](https://datactivist.coop/dataweek/dataviz/img/create-chart.PNG)]
+.reduite[![](https://datactivist.coop/dataweek/dataviz/img/coller_resultats.PNG)]
+.reduite[![](https://datactivist.coop/dataweek/dataviz/img/modif_resultats.PNG)]
+]
+
+---
+### Atelier sur les résultats des élections présidentielles de 2017
+
+.pull-left[
+- Choisissez le type de visualisation "**Bar Chart**". Vous pouvez tester d'autres visualisation si vous voulez.
+
+- Cliquez sur "**Proceed**"
+
+&lt;Br&gt;
+&lt;Br&gt;
+
+- **Bravo! Vous avez réalisé votre première data visualisation!à**
+
+]
+.pull-right[
+.reduite[![](https://datactivist.coop/dataweek/dataviz/img/Chart_type.PNG)]
+&lt;Br&gt;
+.reduite[![](https://datactivist.coop/dataweek/dataviz/img/Resultats_1er.PNG)]
+]
+
+---
+###.red[Les cartes]
+
+.pull-left[
+- **Pour** :  des données assignées à des aires géographiques
+
+
+
+- **Avantages** : simple à comprendre, joli.
+
+
+
+- **Règles** :
+  1. Simple à réaliser avec des données par pays
+  2. Ne visualiser qu’un indicateur par carte. Sinon utiliser des types de représentation différents
+]
+&lt;Br&gt;
+.pull-right[.reduite[![](https://datactivist.coop/dataweek/dataviz/img/IGN_carte1.PNG)]]
+
+
+---
+### Atelier sur les mesures annuelles des polluants principaux en région Sud
+
+.pull-left[
+- Allez sur https://datasud.fr
+
+- Rechercher le jeu de données "Mesures annuelles des polluants principaux en région Sud"
+
+- Cliquer sur "télécharger" pour le fichier **geojson** "mesures annuelles de monoxyde de carbone (CO)"
+
+- Cliquez sur "Enregistrer" (en haut à guche de la fenêtre)
+
+- Modifier l'entension de fichier ".application" en ".geojson"
+]
+
+.pull-right[
+.reduite[![](https://datactivist.coop/dataweek/dataviz/img/Datasud.PNG)]
+.reduite[![](https://datactivist.coop/dataweek/dataviz/img/Datasud_CO.PNG)]
+.reduite[![](https://datactivist.coop/dataweek/dataviz/img/Datasud_geojson.PNG)]
+]
+
+
+
+---
+
+### Atelier sur les mesures annuelles des polluants principaux en région Sud
+
+.pull-left[
+- Allez sur https://macarte.ign.fr
+
+- Cliquez sur "**Créer ma carte**"
+
+- Sur la barrre de droite cliquez sur "**accéder à l'outil statistique**" (icône diagramme à barre)
+
+- Cliquez sur "**Charger un fichier**" et aller chercher le fichier .geojson enregistré depuis la plateforme Datasud.
+]
+
+
+.pull-right[
+.reduite[![](https://datactivist.coop/dataweek/dataviz/img/IGN.PNG)]
+.reduite[![](https://datactivist.coop/dataweek/dataviz/img/IGN_acces_stat.PNG)]
+.reduite[![](https://datactivist.coop/dataweek/dataviz/img/IGN_charger_fichier.PNG)]
+]
+
+---
+
+### Atelier sur les mesures annuelles des polluants principaux en région Sud
+
+.pull-left[
+- Choisissez le type de carte "**symbole**"
+
+- Choisissez l'attribut "**10-valeur**"
+
+- Vous pouvez modifier les "**paramètres**"
+
+- Cliquez sur l'icône "**enregistrer**" pour exporter la carte au format .png ou .jpg
+&lt;Br&gt;
+- **Bravo! Vous venez de réaliser votre première carte!**
+]
+
+.pull-right[
+.reduite[![](https://datactivist.coop/dataweek/dataviz/img/IGN_carte_couleur.PNG)]
+.reduite[![](https://datactivist.coop/dataweek/dataviz/img/IGN_carte1.PNG)]
+]
+
+
+---
+
+class: inverse, center, middle
+
+# Merci !
+
+Contact : [samgoeta@hey.com](mailto:samgoeta@hey.com)
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();</script>
+
+<script>
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

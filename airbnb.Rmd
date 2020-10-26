@@ -35,5 +35,19 @@ airbnb2019 <- st_join(airbnb_geo, cadastre)
 # exporter en csv
 airbnb2019 %>% 
     st_write(dsn = "airbnb_cadastre.csv", driver = "CSV")
+
+
+airbnb_sections <- airbnb2019 %>% 
+  filter(!is.na(code)) %>% 
+  group_by(code) %>% 
+  summarize(compte = n()) %>% 
+    st_write(dsn = "airbnb_sections.csv", driver = "CSV")
+```
+
+
+```{r}
+# import dvf 
+dvf2019 <- read_csv("https://cadastre.data.gouv.fr/data/etalab-dvf/latest/csv/2019/communes/13/13001.csv")
+dvf2018 <- read_csv("https://cadastre.data.gouv.fr/data/etalab-dvf/latest/csv/2018/communes/13/13001.csv")
 ```
 
