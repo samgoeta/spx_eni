@@ -221,11 +221,6 @@ countdown(minutes = 10, seconds = 00,
 #### .center[https://www.datawrapper.de/]
 
 ---
-### .red[HighCharts]
-.center[.reduite[![](https://datactivist.coop/dataweek/dataviz/img/HighCharts.PNG)]]
-#### .center[https://www.highcharts.com/demo]
-
----
 ### .red[Tableau public]
 .center[.reduite[![](https://datactivist.coop/dataweek/dataviz/img/Tableau.PNG)]]
 #### .center[https://public.tableau.com/fr-fr/s/]
