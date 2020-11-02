@@ -158,7 +158,7 @@ Cette visualisation représente le sort des passagers (**survie**) du Titanic se
 
 ```{r, echo=FALSE}
 library(countdown)
-countdown(minutes = 5, seconds = 00, 
+countdown(minutes = 10, seconds = 00, 
           play_sound = TRUE)
 ```
 
