@@ -1,0 +1,426 @@
+---
+title: "Choisir un format et un outil de visualisation"
+subtitle: "Enjeux numériques de l'information"
+author: "Samuel Goëta, Sciences Po Aix"
+date: ""
+output:
+  SlidesDatactivist::moon_reader:
+    css: [default, datactivist, datactivist-fonts]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      beforeInit: ["macros.js", "matomo.js", "https://platform.twitter.com/widgets.js"]
+      slideNumberFormat: |
+        <div class="progress-bar-container">
+          <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+          </div>
+        </div>
+params:
+  event: Choisir un format et un outil de visualisation
+  slug: spx_eni
+  description: Enjeux numériques de l'information - Choisir un format et un outil de visualisation
+  title: Enjeux numériques de l'information - Choisir un format et un outil de visualisation
+  image: https://github.com/datactivist/slides_datactivist/raw/master/inst/rmarkdown/templates/xaringan/resources/img/logo.png
+  image_alt: le logo de Datactivist
+---
+
+```{r, echo=FALSE}
+library(metathis)
+meta() %>% 
+  meta_description(params$event) %>% 
+  meta_name("github-repo" = paste0("datactivist/", params$slug)) %>% 
+  meta_viewport() %>% 
+  meta_social(
+    title = params$title,
+    url = paste0("https://datactivist.coop/", params$slug, "/1"),
+    image = params$image,
+    image_alt = params$image_alt,
+    og_type = "website",
+    og_author = "Datactivist",
+    og_locale = "fr_FR",
+    og_site_name = "Datactivist",
+    twitter_card_type = "summary",
+    twitter_creator = "@datactivi_st")
+```
+
+
+layout: true
+
+<style>
+.remark-slide-number {
+  position: inherit;
+}
+
+.remark-slide-number .progress-bar-container {
+  position: absolute;
+  bottom: 0;
+  height: 4px;
+  display: block;
+  left: 0;
+  right: 0;
+}
+
+.remark-slide-number .progress-bar {
+  height: 100%;
+  background-color: #e95459;
+}
+
+</style>
+  
+
+`r paste0("<div class='my-footer'><span>", params$event, "</span> <center><div class=logo><img src='https://github.com/datactivist/slides_datactivist/raw/master/inst/rmarkdown/templates/xaringan/resources/img/fond_noir_monochrome.png' width='100px'></center></span></div>")` 
+
+---
+
+class: center, middle
+
+Ces slides en ligne : https://samgoeta.github.io/spx_eni/6.html
+
+Sources : https://github.com/samgoeta/spx_eni/
+
+
+Ce cours reprend en partie des productions de Datactivist qui sont librement réutilisables selon les termes de la licence [Creative Commons 4.0 BY-SA](https://creativecommons.org/licenses/by-sa/4.0/legalcode.fr).
+
+<BR>
+<BR>
+
+.center[<img src="./img/ccbysa.png" height="100"/>] 
+
+
+
+---
+
+###.red[Data to viz :] choisir un format pour sa fonction
+
+.pull-left[
+* **Fonction** de la visualisation de données : objectif de la représentation visuelle des données (comparer, suivre une évolution dans le temps, montrer la répartition géographique d'un phénomène…)
+
+* **Format** de la visualisation de données : type de représentation visuelle des données suivant un encodage particulier des données
+
+
+]
+
+.pull-right[
+.center[.reduite2[![](https://datactivist.coop/dataweek/dataviz/img/FromDatatoViz.PNG)]]
+#### .center[https://www.data-to-viz.com/]
+]
+
+Il faut d'abord **réfléchir au message** qu'on souhaite faire passer pour comprendre la fonction de la visualisationet choisir un format. 
+
+---
+### .red[Des outils] en fonction des usages
+.center[.reduite[![](https://datactivist.coop/dataweek/dataviz/img/Tous_les_outils.PNG)]]
+
+Source : [Lisa Charlotte Rost](https://lisacharlotterost.de/datavistools-revisited)
+
+---
+### .red[Un graphique], neuf outils
+
+Lisa Charlotte Rost a testé (et même visualisé ses scores) neuf outils en produisant à chaque fois la même dataviz, issue de [Gapminder](gapminder.com). 
+
+#### Je vais vous présenter ces outils et vous permettre de vous exercer à certains d'entre eux.``
+
+![](https://lisacharlotterost.de/pic/160425_gapminder.png)
+
+---
+### .red[RAWGraphs]
+.center[.reduite[![](https://datactivist.coop/dataweek/dataviz/img/RAWGraphs.PNG)]]
+#### .center[https://rawgraphs.io/]
+
+---
+### .red[RAWGraphs] en pratique
+.center[.reduite[![](https://lisacharlotterost.de/pic/160426-raw.gif)]]
+#### .center[https://rawgraphs.io/]
+
+---
+
+### .red[Exercice :] visualiser le sort des passagers du Titanic 
+
+
+.pull-left[
+#### Objectif : reproduire cette visualisation en .red[vous débrouillant] pour découvrir l'outil
+
+![](img/titanic2.png)
+Cette visualisation représente le sort des passagers (**survie**) du Titanic selon leur **port de départ** et leur **classe lors de la traversée**.
+]
+--
+.pull-right[
+1. Importez les données dans RAWGraphs
+![](img/titanic.png)
+2. Choisissez le format de visualisation 
+3. Choisissez les dimensions à visualiser
+
+#### Partagez votre écran
+
+]
+
+```{r, echo=FALSE}
+library(countdown)
+countdown(minutes = 5, seconds = 00, 
+          play_sound = TRUE)
+```
+
+---
+### .red[Flourish]
+.center[.reduite[![](https://datactivist.coop/dataweek/dataviz/img/Flourish.PNG)]]
+#### .center[https://app.flourish.studio/templates]
+
+
+
+---
+### .red[Flourish] en pratique
+.center[.reduite[![](https://lisacharlotterost.de/pic/180929-flourish.gif)]]
+#### .center[https://app.flourish.studio/templates]
+
+---
+
+### .red[Exercice :] batailles dans Game Of Thrones
+
+<iframe src='https://flo.uri.sh/visualisation/4206702/embed' title='Interactive or visual content' frameborder='0' scrolling='no' style='width:100%;height:450px;'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/4206702/?utm_source=embed&utm_campaign=visualisation/4206702' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>
+
+
+---
+
+### .red[Exercice :] batailles dans GOT
+
+.pull-left[
+#### Objectif : reproduire cette visualisation en .red[vous débrouillant] pour découvrir l'outil
+
+![](img/got.png)
+Cette visualisation représente le **type de batailles** dans Game of Thrones selon le **roi attaquant**. La taille de chaque bataille varie selon le **nombre de soldats à l'attaque.**
+]
+--
+.pull-right[
+
+**.red[Attention : ]** les données n'ont pas été mises à jour depuis 2014 !
+
+1. [Téléchargez les données](https://github.com/chrisalbon/war_of_the_five_kings_dataset/blob/master/5kings_battles_v1.csv) depuis Github (source : chrisalbon). 
+
+2. Créez vous un compte dans Flourish
+
+3. Créer une nouvelle visualisation de type treemap
+
+4. Importez les données
+
+5. Sélectionnez les champs à visualiser
+
+]
+
+```{r, echo=FALSE}
+library(countdown)
+countdown(minutes = 10, seconds = 00, 
+          play_sound = TRUE)
+```
+
+
+---
+### .red[Datawrapper]
+.center[.reduite[![](https://datactivist.coop/dataweek/dataviz/img/Datawrapper.PNG)]]
+#### .center[https://www.datawrapper.de/]
+
+---
+### .red[HighCharts]
+.center[.reduite[![](https://datactivist.coop/dataweek/dataviz/img/HighCharts.PNG)]]
+#### .center[https://www.highcharts.com/demo]
+
+---
+### .red[Tableau public]
+.center[.reduite[![](https://datactivist.coop/dataweek/dataviz/img/Tableau.PNG)]]
+#### .center[https://public.tableau.com/fr-fr/s/]
+
+---
+### .red[Khartis]
+.center[.reduite[![](https://datactivist.coop/dataweek/dataviz/img/Khartis.PNG)]]
+#### .center[http://www.sciencespo.fr/cartographie/khartis/]
+
+
+---
+### .red[macarte.ign]
+.center[.reduite[![](https://datactivist.coop/dataweek/dataviz/img/IGN.PNG)]]
+#### .center[https://macarte.ign.fr]
+
+---
+class: inverse, left, middle
+
+# Ateliers pour réaliser facilement des data visualisation
+
+
+---
+### .red[Le diagramme à barre]
+
+.pull-left[
+- **Pour** :  des données avec différentes catégories ou dénominations
+
+
+
+- **Avantages** : simple à créer et à comprendre
+
+
+
+- **Règles** :
+  1. Ne pas surcharger
+  2. Nommer systématiquement les axes
+  3. Commencer vos axes à 0 (quand il s'agit de données quantifiables)
+]
+<Br>
+<Br>
+.pull-right[.reduite[![](https://datactivist.coop/dataweek/dataviz/img/diagramme_barre.png)]]
+
+
+
+---
+### Atelier sur les résultats des élections présidentielles de 2017
+
+.pull-left[
+- Allez sur http://www.interieur.gouv.fr/Elections/Les-resultats/Presidentielles
+
+- Choisissez votre département sur la carte
+
+- Sélectionner et copiez le tableau avec l'ensemble des candidats du 1er tour.
+]
+
+
+.pull-right[
+.reduite[![](https://datactivist.coop/dataweek/dataviz/img/choix_dep.PNG)]
+.reduite[![](https://datactivist.coop/dataweek/dataviz/img/1er_tour.PNG)]
+]
+
+
+---
+### Atelier sur les résultats des élections présidentielles de 2017
+
+.pull-left[
+- Allez sur www.datawrapper.de et cliquez sur "**create a chart**"
+
+- Coller les données copiez précédemment (tableau des résultats du 1er tour des élections)
+
+- Cliquez sur "**Proceed**"
+
+- Cliquez sur "**add a column**"
+
+- Nommer la nouvelle colonne et remplissez les cellules de la nouvelle colonne
+
+- Cliquez sur "**Proceed**"
+
+]
+.pull-right[
+.reduite[![](https://datactivist.coop/dataweek/dataviz/img/create-chart.PNG)]
+.reduite[![](https://datactivist.coop/dataweek/dataviz/img/coller_resultats.PNG)]
+.reduite[![](https://datactivist.coop/dataweek/dataviz/img/modif_resultats.PNG)]
+]
+
+---
+### Atelier sur les résultats des élections présidentielles de 2017
+
+.pull-left[
+- Choisissez le type de visualisation "**Bar Chart**". Vous pouvez tester d'autres visualisation si vous voulez.
+
+- Cliquez sur "**Proceed**"
+
+<Br>
+<Br>
+
+- **Bravo! Vous avez réalisé votre première data visualisation!à**
+
+]
+.pull-right[
+.reduite[![](https://datactivist.coop/dataweek/dataviz/img/Chart_type.PNG)]
+<Br>
+.reduite[![](https://datactivist.coop/dataweek/dataviz/img/Resultats_1er.PNG)]
+]
+
+---
+### .red[Les cartes]
+
+.pull-left[
+- **Pour** :  des données assignées à des aires géographiques
+
+
+
+- **Avantages** : simple à comprendre, joli.
+
+
+
+- **Règles** :
+  1. Simple à réaliser avec des données par pays
+  2. Ne visualiser qu’un indicateur par carte. Sinon utiliser des types de représentation différents
+]
+<Br>
+.pull-right[.reduite[![](https://datactivist.coop/dataweek/dataviz/img/IGN_carte1.PNG)]]
+
+
+---
+
+### Atelier sur les mesures annuelles des polluants principaux en région Sud
+
+.pull-left[
+- Allez sur https://datasud.fr
+
+- Rechercher le jeu de données "Mesures annuelles des polluants principaux en région Sud"
+
+- Cliquer sur "télécharger" pour le fichier **geojson** "mesures annuelles de monoxyde de carbone (CO)"
+
+- Cliquez sur "Enregistrer" (en haut à guche de la fenêtre)
+
+- Modifier l'entension de fichier ".application" en ".geojson"
+]
+
+.pull-right[
+.reduite[![](https://datactivist.coop/dataweek/dataviz/img/Datasud.PNG)]
+.reduite[![](https://datactivist.coop/dataweek/dataviz/img/Datasud_CO.PNG)]
+.reduite[![](https://datactivist.coop/dataweek/dataviz/img/Datasud_geojson.PNG)]
+]
+
+---
+
+### Atelier sur les mesures annuelles des polluants principaux en région Sud
+
+
+.pull-left[
+- Allez sur https://macarte.ign.fr
+
+- Cliquez sur "**Créer ma carte**"
+
+- Sur la barrre de droite cliquez sur "**accéder à l'outil statistique**" (icône diagramme à barre)
+
+- Cliquez sur "**Charger un fichier**" et aller chercher le fichier .geojson enregistré depuis la plateforme Datasud.
+]
+
+
+.pull-right[
+.reduite[![](https://datactivist.coop/dataweek/dataviz/img/IGN.PNG)]
+.reduite[![](https://datactivist.coop/dataweek/dataviz/img/IGN_acces_stat.PNG)]
+.reduite[![](https://datactivist.coop/dataweek/dataviz/img/IGN_charger_fichier.PNG)]
+]
+
+---
+
+### Atelier sur les mesures annuelles des polluants principaux en région Sud
+
+.pull-left[
+- Choisissez le type de carte "**symbole**"
+
+- Choisissez l'attribut "**10-valeur**"
+
+- Vous pouvez modifier les "**paramètres**"
+
+- Cliquez sur l'icône "**enregistrer**" pour exporter la carte au format .png ou .jpg
+<Br>
+- **Bravo! Vous venez de réaliser votre première carte!**
+]
+
+.pull-right[
+.reduite[![](https://datactivist.coop/dataweek/dataviz/img/IGN_carte_couleur.PNG)]
+.reduite[![](https://datactivist.coop/dataweek/dataviz/img/IGN_carte1.PNG)]
+]
+
+
+---
+
+class: inverse, center, middle
+
+# Merci !
+
+Contact : [samgoeta@hey.com](mailto:samgoeta@hey.com)
