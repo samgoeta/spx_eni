@@ -121,7 +121,7 @@ La data science, comparativement à la statistique "traditionnelle", est un mét
 
 ![](https://www.usine-digitale.fr/mediatheque/0/3/5/000351530/big-data.jpg)
 
----
+
 ---
 ### Exemple de big data : l'algorithme de Spotify 
 
@@ -131,26 +131,9 @@ La data science, comparativement à la statistique "traditionnelle", est un mét
 
 
 
-
----
-### Un essor lié à l'accroissement du volume de données disponibles
-.pull-left[
-- promesse d'efficience, de prédiction, de nouvelles formes de savoir
- 
-- données généralement fermées et privées
-
-- techniquement, se traduit (notamment) par :
-  + le NoSQL (le terme apparaît en 2009 ; il s'agit de bases de données non-structurées, par opposition aux bases de données SQL traditionnelles)
-  + le recours à des architectures de calcul distribuées (par exemple clusters Hadoop) : on utilise plusieurs machines qui travaillent en parallèle pour analyser les données]
-  
-
-.pull-right[
-![](img/nosql.jpg)
-]
-
 ---
 
-## L'obsession du volume de données
+### L'obsession du volume de données
 
 .pull-left[
 **Quelques chiffres omniprésents** : 
@@ -172,7 +155,7 @@ La data science, comparativement à la statistique "traditionnelle", est un mét
 
 ---
 
-## Les promesses du big data
+### Les promesses du big data
 
 ** Selon vous, quels sont les intérêts du big data ?**
 
@@ -194,13 +177,6 @@ Kitchin (2014) résume les promesses du big data :
 class:inverse, center, middle
 
 # 2 - Le rôle de l'informatique dans le développement de la data science
-
----
-## Le rôle de l'informatique
-
-- statistique classique : les problèmes doivent pouvoir être résolus de manière analytique, sans puissance de calcul particulière (d'où le succès du fréquentisme)
-
-- le développement de la puissance de calcul permet de résoudre des problèmes statistiques par la simulation ([MCMC](https://fr.wikipedia.org/wiki/M%C3%A9thode_de_Monte-Carlo_par_cha%C3%AEnes_de_Markov)) : on n'a pas besoin de connaître la solution mathématique, il "suffit" de faire de nombreuses simulations aléatoires.
 
 ---
 ### Développement de la puissance de calcul
@@ -234,7 +210,7 @@ class:inverse, center, middle
 
 
 ---
-## Pour résumer
+### Pour résumer
 
 Autrefois, on travaillait sur :
 
@@ -252,6 +228,59 @@ Aujourd'hui, on travaille avec :
 
 - et des modèles aussi complexes qu'on veut, qui peuvent être estimés grâce à des méthodes de simulation dans un contexte de disponibilité massive de la puissance de calcul. 
 
+---
+
+### Modélisation
+
+- Un modèle réduit de la réalité pour analyser, expliquer ou prédire
+
+Modéliser, c’est mettre en relation une *variable expliquée*
+(dépendante / prédite) et une ou plusieurs *variables explicatives*
+(indépendantes / prédicteurs).
+
+
+---
+### Pourquoi modéliser ?
+
+.reduite[.center[![](https://datactivist.coop/opendatadays/1/img/Hibbs.jpg)]]
+
+
+---
+### Pourquoi modéliser ? Les ["deux cultures"](https://projecteuclid.org/download/pdf_1/euclid.ss/1009213726)
+
+- pour analyser et expliquer
+
+- pour prédire
+
+---
+### Pourquoi modéliser ? Les ["deux cultures"](https://projecteuclid.org/download/pdf_1/euclid.ss/1009213726)
+
+- pour analyser et expliquer (**statistiques classiques, économétrie**)
+
+- pour prédire (**machine learning, IA...**)
+
+### Tous les modèles sont faux, certains sont utiles
+
+
+--- 
+### Exemple de modèle : FiveThirtyEight
+
+[![](img/538.png)](https://projects.fivethirtyeight.com/trump-biden-election-map/?cid=abcnews)
+---
+### Exercice avec FiveThirty Eight
+
+Rendez vous sur la page de méthodologie des prédictions électorales de FiveThirtyEight : https://fivethirtyeight.com/features/how-fivethirtyeights-2020-presidential-forecast-works-and-whats-different-because-of-covid-19/
+
+Constituez 4 groupes : 
+- step 1 : sondages
+
+- step 2 : données fondamentales
+
+- step 3 : incertitude
+
+- step 4 : ajustements
+
+#### Chaque groupe devra préparer  une présentation de 5 minutes max au prochain cours 
 
 ---
 class: inverse, center, middle
