@@ -28,12 +28,16 @@ A l’ère dite du big data, l’attention portée sur les données toujours plu
 [Slides](https://samgoeta.github.io/spx_eni/1.html)
 
 2. Les données dans leur diversité : type, formats, modes de collecte et de circulation
+
 —> Lecture obligatoire : Chapitre 1 « /conceptualising data »/  : Kitchin (2014), /The Data Revolution : Big Data, Open Data, Data Infrastructures and Their consequences/, Sage Publications. 
-[Slides](https://samgoeta.github.io/spx_eni/2.html)
+
+—>[Slides](https://samgoeta.github.io/spx_eni/2.html)
 
 3. Ethique des données, cadre juridique de la protection des données personnelles
+
 —> Lecture obligatoire : Documentaire « [Democracy](https://peertube3.cpy.re/videos/watch/39a38ea4-9dd8-482c-924e-6ce720070f2e) : la ruée vers les datas » 
-[Slides](https://samgoeta.github.io/spx_eni/3.html)
+
+—>[Slides](https://samgoeta.github.io/spx_eni/3.html)
 
 #### Information
 
