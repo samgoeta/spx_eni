@@ -24,24 +24,35 @@ A l’ère dite du big data, l’attention portée sur les données toujours plu
 
 #### Données
 
-1. Qu’est ce qu’une donnée ? Petite histoire de la mise en données du monde
+1. Qu’est ce qu’une donnée ? Petite histoire de la mise en données du monde 
+[Slides](https://samgoeta.github.io/spx_eni/1.html)
 
 2. Les données dans leur diversité : type, formats, modes de collecte et de circulation
+
 —> Lecture obligatoire : Chapitre 1 « /conceptualising data »/  : Kitchin (2014), /The Data Revolution : Big Data, Open Data, Data Infrastructures and Their consequences/, Sage Publications. 
 
+—>[Slides](https://samgoeta.github.io/spx_eni/2.html)
+
 3. Ethique des données, cadre juridique de la protection des données personnelles
+
 —> Lecture obligatoire : Documentaire « [Democracy](https://peertube3.cpy.re/videos/watch/39a38ea4-9dd8-482c-924e-6ce720070f2e) : la ruée vers les datas » 
+
+—>[Slides](https://samgoeta.github.io/spx_eni/3.html)
 
 #### Information
 
 4. Bonnes pratiques, pièges et écueils de la visualisation de données
 --> lecture à définir
+[Slides](https://samgoeta.github.io/spx_eni/4.html)
 
 5. La visualisation de données en pratique : fonctions, formats, outils
 —> lecture à définir
+[Slides](https://samgoeta.github.io/spx_eni/5.html)
+[Slides](https://samgoeta.github.io/spx_eni/6.html)
 
 6. Data science : modélisation, machine learning et algorithmes
 —> Lecture obligatoire : Parasie&Dagiral (2016) , « [La science des données à la conquête des mondes sociaux. Ce que le Big Data doit aux épistémologies locales](http://books.openedition.org/cdf/4999?lang=fr)», in P.-M. Menger et S. Paye (dir.), /Big data et traçabilité numérique : les sciences sociales face à la quantification massive des individus/, Paris, Collège de France. 
+[Slides](https://samgoeta.github.io/spx_eni/7.html)
 
 ### Savoirs
 7. Science ouverte
