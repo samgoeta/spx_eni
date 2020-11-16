@@ -1,0 +1,146 @@
+---
+title: "Data science : modélisation, machine learning et algorithmes"
+subtitle: "Enjeux numériques de l'information"
+author: "Samuel Goëta, Sciences Po Aix"
+date: " `r Sys.Date()`"
+output:
+  SlidesDatactivist::moon_reader:
+    css: [default, datactivist, datactivist-fonts]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      beforeInit: ["macros.js", "https://platform.twitter.com/widgets.js"]
+      slideNumberFormat: |
+        <div class="progress-bar-container">
+          <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+          </div>
+        </div>`
+params:
+  event: Modélisation, machine learning et algorithmes
+  slug: spx_eni
+---
+
+layout: true
+
+<style>
+.remark-slide-number {
+  position: inherit;
+}
+
+.remark-slide-number .progress-bar-container {
+  position: absolute;
+  bottom: 0;
+  height: 4px;
+  display: block;
+  left: 0;
+  right: 0;
+}
+
+.remark-slide-number .progress-bar {
+  height: 100%;
+  background-color: #e95459;
+}
+
+</style>
+
+
+`r paste0("<div class='my-footer'><span>", params$event, "</span> <center><div class=logo><img src='https://github.com/datactivist/slides_datactivist/raw/master/inst/rmarkdown/templates/xaringan/resources/img/fond_noir_monochrome.png' width='100px'></center></span></div>")` 
+
+
+---
+
+class: center, middle
+
+Ces slides en ligne : https://samgoeta.github.io/spx_eni/7.html
+
+Sources : https://github.com/samgoeta/spx_eni/
+
+
+Les productions de Datactivist sont librement réutilisables selon les termes de la licence [Creative Commons 4.0 BY-SA](https://creativecommons.org/licenses/by-sa/4.0/legalcode.fr).
+
+<BR>
+<BR>
+
+![](https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-sa.png)
+
+
+---
+class:center, middle, inverse
+
+# 1 - Data science is the new statistics?
+
+---
+
+### Au commencement était la statistique
+
+.pull-left[
+- une vieille science (18e siècle), pour aider les États (_Statistik_) mais aussi des entreprises privées (au départ, les assureurs => actuariat)
+
+- fondée sur les probabilités
+
+- faite par des mathématiciens
+
+- forte dimension théorique
+]
+
+.pull-right[
+.center[.reduite3[![](https://datactivist.coop/opendatadays/1/img/asterix1.png)]]
+
+.footnote[*Asterix chez les pictes*, © Albert René 2013]
+]
+
+---
+class:middle
+### Data science : les nouvelles statistiques ?
+
+> Je continue à dire que le travail sexy dans les dix prochaines années sera celui de statisticien. Les gens pensent que je plaisante, mais qui aurait deviné que les ingénieurs en informatique auraient été le métier sexy des années 1990 ?
+Hal Varian (Chief economist, Google), The McKinsey Quarterly, January 2009
+
+
+> “Je pense que data-scientist est un terme glamour pour désigner un statisticien”.
+[Nate Silver](http://www.statisticsviews.com/details/feature/5133141/Nate-Silver-What-I-need-from-statisticians.html)
+
+
+---
+### Un métier au croisement de trois compétences 
+.pull-left[
+[.reduite[.center[![](https://datactivist.coop/SPoSGL/sections/img/data-science-venn-diagram.png)]]](http://www.prooffreader.com/2016/09/battle-of-data-science-venn-diagrams.html)
+]
+
+.pull-right[
+
+La data science, comparativement à la statistique "traditionnelle", est un métier de praticien, presque de bidouilleur : elle nécessite des compétences mathématiques et statistiques, certes, mais aussi une compétence "métier" (compréhension du domaine d'application) et une solide maîtrise de l'informatique. 
+]
+
+---
+### Exemple de big data : l'algorithme de Spotify 
+
+[![](img/spotify.png)](https://medium.com/s/story/spotifys-discover-weekly-how-machine-learning-finds-your-new-music-19a41ab76efe)
+
+[![](img/spoti.png)](https://medium.com/s/story/spotifys-discover-weekly-how-machine-learning-finds-your-new-music-19a41ab76efe)
+---
+### Un essor lié à l'accroissement du volume de données disponibles
+
+.pull-left[
+"Big data" : un label devenu omniprésent
+
+- l'expression émerge vers 2007/2008 (même si on en trouve des occurrences anciennes)
+
+- se définit par les quatre V (selon la société Gartner) : "volume", "velocity", "variety" (+ "veracity" ?)
+
+- Kitchin ajoute l'exhaustivité, la résolution, la *scalability*
+]
+
+.pull-right[
+![](https://www.usine-digitale.fr/mediatheque/0/3/5/000351530/big-data.jpg)]
+
+---
+class: inverse, center, middle
+
+# Merci !
+
+Contact : [joel@datactivist.coop](mailto:joel@datactivist.coop)
+
+
