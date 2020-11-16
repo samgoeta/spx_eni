@@ -120,27 +120,252 @@ La data science, comparativement à la statistique "traditionnelle", est un mét
 [![](img/spotify.png)](https://medium.com/s/story/spotifys-discover-weekly-how-machine-learning-finds-your-new-music-19a41ab76efe)
 
 [![](img/spoti.png)](https://medium.com/s/story/spotifys-discover-weekly-how-machine-learning-finds-your-new-music-19a41ab76efe)
+
 ---
 ### Un essor lié à l'accroissement du volume de données disponibles
-
 .pull-left[
-"Big data" : un label devenu omniprésent
+- promesse d'efficience, de prédiction, de nouvelles formes de savoir
+ 
+- données généralement fermées et privées
 
-- l'expression émerge vers 2007/2008 (même si on en trouve des occurrences anciennes)
-
-- se définit par les quatre V (selon la société Gartner) : "volume", "velocity", "variety" (+ "veracity" ?)
-
-- Kitchin ajoute l'exhaustivité, la résolution, la *scalability*
-]
+- techniquement, se traduit (notamment) par :
+  + le NoSQL (le terme apparaît en 2009 ; il s'agit de bases de données non-structurées, par opposition aux bases de données SQL traditionnelles)
+  + le recours à des architectures de calcul distribuées (par exemple clusters Hadoop) : on utilise plusieurs machines qui travaillent en parallèle pour analyser les données]
+  
 
 .pull-right[
-![](https://www.usine-digitale.fr/mediatheque/0/3/5/000351530/big-data.jpg)]
+![](img/nosql.jpg)
+]
+
+---
+
+## L'obsession du volume de données
+
+.pull-left[
+**Quelques chiffres omniprésents** : 
+- le volume de données produit double tous les 3 ans (Gantz & Reisel 2011)
+- 90% des données créées dans les deux dernières années (IBM 2012)
+- 40% : croissance annuelle de la production de données (Maniyka et al. 2011) 
+]
+
+--
+
+.pull-right[
+**Problèmes de cette approche** : 
+- Estimations guidées par des intérêts commerciaux
+- Ne définit pas ce que sont ces données
+- Résume le big data au Volume
+-Explique mal la mise en données du monde
+
+]
+
+---
+
+## Les promesses du big data
+
+** Selon vous, quels sont les intérêts du big data ?**
+
+--
+
+Kitchin (2014) résume les promesses du big data : 
+- **“Administrer les citoyens”** : dans la continuité de la statistique, améliorer la connaissance de l’administration et prédire l(par exemple, es crimes
+)
+- **“Gérer les organisations”** : améliorer le fonctionnement de toutes les composantes de l’organisation par l’exploitation des données
+
+- **“Accroître la valeur”** : micro-ciblage marketing, optimisation des magasins et des opérations, efficience de la chaine
+
+- **“Créer de meilleurs endroits”** : gouverner les villes avec des données (smart city) 
+
+- **Un nouveau paradigme scientifique** : une nouvelle ère guidée par les corrélations
+, sans théorie
+
+---
+class:inverse, center, middle
+
+# 2 - Le rôle de l'informatique dans le développement de la data science
+
+---
+## Le rôle de l'informatique
+
+- statistique classique : les problèmes doivent pouvoir être résolus de manière analytique, sans puissance de calcul particulière (d'où le succès du fréquentisme)
+
+- le développement de la puissance de calcul permet de résoudre des problèmes statistiques par la simulation ([MCMC](https://fr.wikipedia.org/wiki/M%C3%A9thode_de_Monte-Carlo_par_cha%C3%AEnes_de_Markov)) : on n'a pas besoin de connaître la solution mathématique, il "suffit" de faire de nombreuses simulations aléatoires.
+
+---
+### Développement de la puissance de calcul
+
+[.reduite[.center[![](https://datactivist.coop/SPoSGL/sections/img/moore.png)]]](http://visual.ly/infographic-about-computers)
+
+---
+### Développement de la capacité de stockage
+
+1996... 
+[.reduite[.center[![](https://datactivist.coop/SPoSGL/sections/img/altavista.png)]]](https://twitter.com/alicemazzy/status/655306196128280576?ref_src=twsrc%5Etfw)
+
+
+---
+### Développement de la capacité de stockage
+2016...
+
+[.reduite[.center[![](https://datactivist.coop/SPoSGL/sections/img/amazon.png)]]](https://aws.amazon.com/blogs/aws/aws-snowmobile-move-exabytes-of-data-to-the-cloud-in-weeks/)
+
+---
+### Développement de la capacité de stockage
+
+2016... 
+
+.reduite[.center[![](https://datactivist.coop/SPoSGL/sections/img/snowmobile.png)]]
+
+---
+### Développement de la capacité de stockage
+
+[.reduite[.center[![](./img/atacama.png)]]](https://aws.amazon.com/blogs/aws/aws-snowmobile-move-exabytes-of-data-to-the-cloud-in-weeks/)
+
+
+---
+## Pour résumer
+
+Autrefois, on travaillait sur :
+
+- de "petits" jeux de données (aussi bien en termes de nombre de lignes que de colonnes)
+
+- avec des valeurs numériques ou transformées en nombres
+
+- des modèles simples, voire simplistes, pour pouvoir facilement être estimés
+
+Aujourd'hui, on travaille avec :
+
+- des données parfois massives
+
+- qui peuvent porter sur des nombres, mais aussi du texte, des images, des vidéos...
+
+- et des modèles aussi complexes qu'on veut, qui peuvent être estimés grâce à des méthodes de simulation dans un contexte de disponibilité massive de la puissance de calcul. 
+
+
+---
+class: inverse, center, middle
+
+## 3 - Les étapes de l'analyse des données
+
+### Le data pipeline
+
+---
+
+Formalisé par la [School of data](https://schoolofdata.org/methodology/), il vise à modéliser les différentes étapes d'un projet d'analyse de données.
+
+.reduite[.center[![](./img/datapipeline.png)]]
+
+---
+### Le data pipeline
+
+
+Il a également été formalisé, de manière légèrement différente, par Hadley Wickham (Chief Scientist Officer chez Rstudio) dans un contexte de data 
+
+Il est intéressant de noter que cette version met en évidence la dimension itérative : on essaie, on corrige, on recommence...jusqu'à ce que le résultat soit stabilisé et donc communicable.
+
+[.reduite[.center[![](/img/data-science.png)]]](https://r4ds.had.co.nz/introduction.html)
+
+---
+### Définir les données dont on a besoin
+
+.center[![](https://datactivist.coop/SPoSGL/sections/img/define.png)]
+
+Cette étape est essentielle. Il s'agit de traduire une problématique concrète, en identifiant quelles données permettraient de la résoudre. Idéalement, c'est elle qui détermine les données mobilisées... mais parfois, on n'a pas le choix et on doit être opportuniste. 
+
+
+
+---
+### Trouver les données
+
+.center[![](https://datactivist.coop/SPoSGL/sections/img/find.png)]
+
+Une fois les données qu'on recherche identifiées, encore faut-il effectivement les trouver !
+À l'avenir, assistera-t-on au développement d'un nouveau métier de "conciergerie de données" ?
+
+Où chercher ?
+- portails open data
+- dépôts divers (internes aux organisations ou publics)
+- data brokers
+- s'adresser au chief data officer
+- etc.
+
+---
+### Acquérir les données
+
+.center[![](https://datactivist.coop/SPoSGL/sections/img/get.png)]
+
+Il s'agit d'importer les données dans son outil d'analyse (Excel, logiciel spécialisé, langage de programmation...).
+
+Des outils dédiés, souvent qualifiés d'ETL (extract / transform / load), existent (ex : Talend).
+
+???
+
+Connecteurs
+ETL : ex Talend, Logstash
+
+
+---
+### Vérifier les données
+
+.center[![](https://datactivist.coop/SPoSGL/sections/img/verify.png)]
+
+La qualité des données est-elle correcte ? Les données sont-elles à jour ? Bien documentées ? Exhaustives ? 
+
+Il est important de pratiquer un "sanity check" : vérifier sur un échantillon de données qu'elles n'ont pas l'air aberrantes par rapport à ce qu'on sait déjà.
+
+???
+
+Importance d'un sanity check
+
+---
+### Vérifier les données
+
+.center[[![](https://datactivist.coop/SPoSGL/sections/img/sanity.jpg)](http://www.erogol.com/ml-work-flow-part-4-sanity-checks-data-spliting/)]
+
+
+
+---
+### Nettoyer les données
+
+.center[![](https://datactivist.coop/SPoSGL/sections/img/clean.png)]
+
+Les données sont rarement dans la forme dont on a besoin pour pouvoir les analyser... Il faut donc les nettoyer, les mettre en forme. 
+
+On peut pour se faire par exemple s'appuyer sur le paradigme du [*tidy data*](https://r4ds.had.co.nz/tidy-data.html) (données "bien rangées") : une ligne par observation, une colonne par variable, une valeur par case.
+
+
+---
+### Analyser les données
+
+.center[![](https://datactivist.coop/SPoSGL/sections/img/analyse.png)]
+
+C'est la partie à laquelle on pense spontanément quand on parle de *data science*, qui fait fantasmer les scénaristes et les professionnels du marketing... mais qui représente environ 20 % du temps consacré à un projet de *data science*. 
+
+C'est à cette phase que se fait la modélisation, sur laquelle nous revenons dans la dernière section. 
+
+
+
+
+---
+## Communiquer les résultats
+
+.center[![](https://datactivist.coop/SPoSGL/sections/img/present.png)]
+
+L'analyse une fois stabilisée, il faut la communiquer à son audience (public, chercheurs, décideur...). De multiples formes sont possibles, on parlera parfois de *data science product* :
+
+- rapport
+- [recherche reproductible](https://r4ds.had.co.nz/r-markdown.html)
+- datavisualisation
+- dashboard
+- [application interactive](http://shiny.rstudio.com/)
+- etc.
+
 
 ---
 class: inverse, center, middle
 
 # Merci !
 
-Contact : [joel@datactivist.coop](mailto:joel@datactivist.coop)
+Contact : [samuel@datactivist.coop](mailto:joel@datactivist.coop)
 
 
